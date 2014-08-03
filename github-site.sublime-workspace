@@ -1,0 +1,1606 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"do",
+				"document"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"com",
+				"compressed"
+			],
+			[
+				"compa",
+				"compact"
+			],
+			[
+				"div",
+				"dividing"
+			],
+			[
+				"column",
+				"column-width"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"css",
+				"css_dir"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"ff",
+				"ff-ss	font-family: sans-serif;"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"setting",
+				"this.settings.target"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"leading",
+				"leadign-margin"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"main-",
+				"main-color-dark"
+			],
+			[
+				"main",
+				"main-color-dark"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"blue",
+				"blue-dark"
+			],
+			[
+				"bu",
+				"blue-dark"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"f",
+				"font-family"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bo",
+				"border-box"
+			],
+			[
+				"blu",
+				"blue-dark"
+			],
+			[
+				"g",
+				"green"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bre",
+				"breadcrumb--responsive"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"border-top-",
+				"border-top-width"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"border-w",
+				"border-width"
+			],
+			[
+				"select",
+				"selectbox"
+			],
+			[
+				"colored",
+				"coloredred"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"ls",
+				"list-style"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"bdr",
+				"border-right"
+			],
+			[
+				"br",
+				"border-top"
+			],
+			[
+				"a",
+				"wait"
+			],
+			[
+				"marin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bg",
+				"background-image"
+			],
+			[
+				"bd",
+				"border"
+			],
+			[
+				"brb",
+				"border-bottom"
+			],
+			[
+				"bdb",
+				"border-bottom"
+			],
+			[
+				"device",
+				"deviceChosen"
+			],
+			[
+				"lo",
+				"location	\\$location"
+			],
+			[
+				"bore",
+				"border-top"
+			],
+			[
+				"bacground",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"ea",
+				"ease-in-out"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"st",
+				"stylesheets"
+			],
+			[
+				"but",
+				"button-color"
+			],
+			[
+				"border-b",
+				"border-bottom-color"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"web",
+				"webkit-transform"
+			],
+			[
+				"base",
+				"base-color"
+			],
+			[
+				"brd",
+				"border-bottom"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"body",
+				"body-content"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"chec",
+				"check-all"
+			],
+			[
+				"p",
+				"precents"
+			],
+			[
+				"cho",
+				"choice2"
+			],
+			[
+				"fff",
+				"F9F9F9"
+			],
+			[
+				"data",
+				"data-markup"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"slide",
+				"slideUp"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"varia",
+				"variables"
+			],
+			[
+				"bas",
+				"base-fontSize"
+			],
+			[
+				"prog",
+				"progWidth"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"lts",
+				"list-style"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"funnel_",
+				"funnel_item"
+			],
+			[
+				"menu",
+				"menu-arrow"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 103,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Compass/Compass.sublime-build",
+	"command_palette":
+	{
+		"height": 423.0,
+		"selected_items":
+		[
+			[
+				"gulp",
+				"Gulp"
+			],
+			[
+				"gul",
+				"Gulp"
+			],
+			[
+				"gu",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"gulp k",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"gulp ",
+				"Gulp"
+			],
+			[
+				"g",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"css",
+				"Run CSScomb JS"
+			],
+			[
+				"cssc",
+				"Run CSScomb JS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"package Control",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"glup",
+				"Gulp"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"beut",
+				"SassBeautify: Convert from SCSS to current type"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"emm",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"thmer",
+				"Themr: List themes"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"reloa",
+				"Emmet: Reload Extensions"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"doc",
+				"Snippet: docReady"
+			],
+			[
+				"snipp",
+				"Snippet: newHTML"
+			],
+			[
+				"packages",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"packeag",
+				"Package Control: Remove Package"
+			],
+			[
+				"packave",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"su",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"html",
+				"Snippet: newHTML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"align",
+				"BracketHighlighter: Select Next Attribute (left)"
+			],
+			[
+				"sn",
+				"Snippet: newHTML"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"new",
+				"Snippet: newHTML"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"conf",
+				"Snippet: config"
+			],
+			[
+				"snippet n",
+				"Snippet: newHTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: blockcomment"
+			],
+			[
+				"merg",
+				"Emmet: Merge Lines"
+			],
+			[
+				"mer",
+				"Emmet: Merge Lines"
+			],
+			[
+				"merge",
+				"Emmet: Merge Lines"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 425.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/designexpress/root/branches/css_framework/trunk/pub/sass/_theme-template.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/buttons/_button-animated.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/buttons/_buttons.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/bucket.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/bang2.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/news.svg",
+		"/C/Program Files (x86)/Scratchpad/Scratchpad-v7.ahk",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/template/how-to.txt",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/styles.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/kss.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/forms/_forms.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/core/_mixins.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/core/_normalize.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/core/_helpers.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/section-0.html",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/template/changelog.html",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/flags/_tooltips-helper.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/_variables.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/progress/_progress-helpers.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/progress/_progress.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/kss.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/panes/_panel.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/flags/_tooltips.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/flags/_flags.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Resources/css/Transim.Common.UI.styles.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/panes/_dialog-modal.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/gulpfile.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/_tr-framework.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/patterns/_card.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/flags/_alerts.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/pdf/_pdf.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/ZeroClipboard.min.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/ZeroClipboard.swf",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/ZeroClipboard.swf",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/buttons/_button-mixin.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/template/public/_rainbow-github.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/Transim-Common-UI.sublime-project",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/patterns/_breadcrumb.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/patterns/_media-object.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/patterns/_pagination.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/jqueryui/_jquery-ui.scss",
+		"/C/Users/mpeutz/.csscomb.json",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/tooltips/_tooltips.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/tooltips/_tooltips-helper.scss",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/CSScomb/node_modules/csscomb/config/csscomb.json",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/User/CSScomb JS.sublime-settings",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/CSScomb JS/CSScomb JS.sublime-settings",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/CSScomb JS/Default.sublime-keymap",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/tables/_table-responsive.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/template/index.html",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/panes/_panes.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/forms/_forms-extras.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/styleguide.bat",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/nav-lists/_accordion.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Resources/js/Transim.Common.UI.accordion.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/index.html",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/help-filled.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/help.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/hand.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/forms/_forms-controls.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/fork.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/icon/favorite.svg",
+		"/C/Users/mpeutz/Documents/Transim/UID/test/TransimStyleSansCompass/js/pack/actions.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/icons/_icon-names.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/fonts/_icon-template.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/fonts/_icon-template-kss.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/index.html",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/public/require.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/components/nav-lists/_tabs.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/styleguide.md",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/styleguide/sass/tr-framework/components/icons/_icon-names.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/styles.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Assets/sass/tr-framework/theme/_test-suite.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/common/trunk/Transim.Common.UI/Transim.Common.UI/Resources/css/Transim.Common.UI.Style.css",
+		"/C/Users/mpeutz/Desktop/Scratchpad/Scratchpad.ahk",
+		"/C/Users/mpeutz/Desktop/Scratchpad.ahk",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_baytrail.scss",
+		"/C/Users/mpeutz/AppData/Roaming/npm/node_modules/kss/lib/kss.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Scripts/page-scripts.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_search-bar.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_top-bar.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_pin-bar.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_page.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_dashboard-page.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_resizable-view.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_system-select.scss",
+		"/C/Users/mpeutz/AppData/Roaming/npm/node_modules/kss/lib/kss_styleguide.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/layout/_grid.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/Search/GetDocument.cshtml",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_split-pane.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_summary.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_side-bar.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_legal-and-faq.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/elements/_icons.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_svg-icons.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/_variables.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/core/_helpers.scss",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/Colorsublime-Themes/Solarized-light.tmTheme",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/Colorsublime-Themes/Solarized-dark.tmTheme",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/_transim.scss",
+		"/C/Users/mpeutz/Documents/Personal/landing2013/dashboard.html",
+		"/C/Users/mpeutz/Documents/Personal/landing2013/css/style.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/layout/_forms.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/core/_mixins.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_CAD-overrides.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/layout/_typography.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_footer.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/core/_blind-classes.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/elements/_buttons.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/Dashboard/Index.cshtml.mine",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/layout/_nav.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/pages/_block-diagram.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/images/icons.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/config.rb",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/sass/transim/shared/_subsystem-explorer.scss",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/Shared/_TopMenu.cshtml",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/Shared/_TopBar.cshtml",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Scripts/toast-alert.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Scripts/transim.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/LearningSystem/_BlockMenu.cshtml",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/images/baytrail.svg",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Views/Shared/_PageHeading.cshtml",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/PagedList.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Scripts/pdf.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Scripts/iCheck.js",
+		"/C/Users/mpeutz/Documents/Transim/SVN/main/Intel/mdc/trunk/Content/css/styles.css",
+		"/C/Users/mpeutz/Documents/Transim/SVN/core/DesignWizard/trunk/Transim.DesignWizard/Transim.DesignWizard/Resources/include.html",
+		"/C/Users/mpeutz/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 142.0,
+		"where_history":
+		[
+			"<open folders>",
+			"",
+			"C:\\Users\\mpeutz\\Documents\\Websites\\www.peacock.dev\\wp-content\\themes\\peacock-theme\\bbpress-repository",
+			"C:\\Users\\mpeutz\\Documents\\Websites\\www.peacock.dev\\wp-content\\themes\\peacock-themebbpress-repoitory\\"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"007aff",
+			"007AFF",
+			" !default",
+			"li",
+			",",
+			" !default",
+			"$font-color",
+			"#555",
+			"#999",
+			"#333",
+			"card",
+			"cards",
+			"$header-logo-image",
+			"Minimised",
+			"minimised",
+			"gUpdateVars",
+			"vStartMinimised",
+			" <br />",
+			"code",
+			"$version-count",
+			"size",
+			"developers",
+			"item",
+			"form-labe",
+			"translateX(-50%) translateY(-50%)",
+			"translateX(-50%)",
+			" p",
+			"\"",
+			"kss-markup-copy",
+			"modifier-head",
+			"$main",
+			"\\",
+			"[class*='tooltip']",
+			"#{$property-x}",
+			"<%= fontPath %>",
+			"<%= fontFamily %>",
+			"button",
+			"input",
+			"value-input",
+			"6.3.5",
+			"/Resources",
+			"../..",
+			".r87180.en-US.js.txd",
+			"txd/Transim.Common.UI",
+			"\"",
+			"#{$prefix}",
+			"isInsideSelector",
+			"#{$prefix}",
+			"propertyX",
+			"transitionDirection",
+			"arrowOffsetX",
+			"$arrowBorderWidth",
+			"transitionDirection",
+			"propertyY",
+			"14.",
+			"13.",
+			"arrowBorderWidth",
+			"txd",
+			"font",
+			"../fonts/",
+			"    font-size: 0;",
+			"client",
+			"CDABF1",
+			" #",
+			"client",
+			"#70538F",
+			".header",
+			"back",
+			"width: 820px;",
+			"#4C8D25",
+			"#f60",
+			"alt-color",
+			" translateX(-50%) translateY(-50%) translateZ(0)",
+			"video-",
+			"st1",
+			"st0",
+			"48px",
+			"5",
+			"exar",
+			"rohm",
+			"9A57E3",
+			"D557E3",
+			"4C8D25",
+			"1px",
+			"sectionData",
+			"markup",
+			"child",
+			"-150%",
+			"E90D71",
+			" || $target.closest('.top-nav-sub-item').length > 0",
+			"$target.indexOf(\"top-nav-sub-item\") >= 0 || ",
+			"top-nav-sub-item-text",
+			"after",
+			".badge ",
+			"auto",
+			"\"",
+			"gps",
+			"loc",
+			"E90D71",
+			" translateY(-50%)",
+			"level",
+			"; base64",
+			"base64",
+			"20",
+			"50%",
+			"datasheet",
+			"13px",
+			"cover",
+			"baytrailcr",
+			"&[",
+			"explo",
+			"das",
+			"$span",
+			".changeNumber",
+			"translateY(-50%)",
+			"-50%",
+			"btn",
+			"cont",
+			"btn",
+			"cont",
+			"card",
+			"900",
+			"top-nav-sub-menu",
+			"bay",
+			"btn",
+			"iconBlock",
+			"    display: inline-block;",
+			"    height: 26px;\n    width: 26px;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"intelclear",
+			"isOpened",
+			".icon.",
+			"\"",
+			"$normalized-font-family",
+			"$legacy-ie",
+			"$normalize-headings",
+			"\"",
+			"$table-radius",
+			"$table-border-color",
+			"isActive",
+			"btnname",
+			"",
+			".com,",
+			".org,",
+			".net,",
+			"alertElem",
+			"alert",
+			"Alert",
+			"push3",
+			"push2",
+			"push1",
+			"push-",
+			"icons-",
+			"tr",
+			"5px",
+			"tt",
+			"column-",
+			".row5, .row1,",
+			"&lt;",
+			"$base-font-size",
+			"click",
+			"ss6",
+			"ss5",
+			"ss4",
+			"ss3",
+			"ss2",
+			"ss1",
+			"ss0",
+			"$",
+			"class=\"ss",
+			"#ff5500",
+			"btn-flat",
+			"480px",
+			"768px",
+			"1024px",
+			".grayblock",
+			"grayblock",
+			"#000",
+			"$radius",
+			"#000",
+			"$radius"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized-dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 381.0
+	},
+	"project": "github-site.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"bu",
+				"Assets\\sass\\tr-framework\\components\\buttons\\_buttons.scss"
+			],
+			[
+				"norm",
+				"Assets\\sass\\tr-framework\\core\\_normalize.scss"
+			],
+			[
+				"var",
+				"sass\\_variables.scss"
+			],
+			[
+				"help",
+				"sass\\tr-framework\\core\\_helpers.scss"
+			],
+			[
+				"form",
+				"sass\\tr-framework\\components\\forms\\_forms-extras.scss"
+			],
+			[
+				"grid",
+				"Content\\sass\\transim\\layout\\_grid.scss"
+			],
+			[
+				"top",
+				"Content\\sass\\transim\\shared\\_top-bar.scss"
+			],
+			[
+				"block",
+				"Content\\sass\\transim\\pages\\_block-diagram.scss"
+			],
+			[
+				"page",
+				"Content\\sass\\transim\\pages\\_page.scss"
+			],
+			[
+				"side",
+				"Content\\sass\\transim\\shared\\_side-bar.scss"
+			],
+			[
+				"dita",
+				"Content/sass/transim/shared/_dita.scss"
+			],
+			[
+				"config",
+				"config.rb"
+			],
+			[
+				"actions",
+				"coffee/actions.js"
+			],
+			[
+				"lay",
+				"jade/layout.jade"
+			],
+			[
+				"res",
+				"coffee/responsive-elements.js"
+			],
+			[
+				"an",
+				"js/angular-example.js"
+			],
+			[
+				"tables",
+				"coffee/tables.js"
+			],
+			[
+				"table",
+				"scss/amalgam/layout/_tables.scss"
+			],
+			[
+				"start",
+				"jade/start.jade"
+			],
+			[
+				"hom",
+				"home.html"
+			],
+			[
+				"theme",
+				"scss/theme.scss"
+			],
+			[
+				"panel",
+				"scss/amalgam/components/_panels.scss"
+			],
+			[
+				"action",
+				"coffee/actions.js"
+			],
+			[
+				"mol",
+				"jade/molecules.jade"
+			],
+			[
+				"helper",
+				"scss/amalgam/core/_helpers.scss"
+			],
+			[
+				"ang",
+				"js/angular-example.js"
+			],
+			[
+				"but",
+				"scss/amalgam/components/_buttons.scss"
+			],
+			[
+				"base",
+				"css/base-styles.css"
+			],
+			[
+				"nav",
+				"scss/amalgam/layout/_nav.scss"
+			],
+			[
+				"pane",
+				"scss/amalgam/components/_panels.scss"
+			],
+			[
+				"hel",
+				"scss/amalgam/core/_helpers.scss"
+			],
+			[
+				"st",
+				"css/base-styles.css"
+			],
+			[
+				"variable",
+				"sass/_variables.scss"
+			],
+			[
+				"forms.scss",
+				"sass/frame/layout/_forms.scss"
+			],
+			[
+				"mixins.scss",
+				"sass/frame/core/_mixins.scss"
+			],
+			[
+				"dr",
+				"javascripts/jquery.dropdown.js"
+			],
+			[
+				"well",
+				"sass/frame/component/_wells.scss"
+			],
+			[
+				"gr",
+				"sass/frame/core/_grid.scss"
+			],
+			[
+				"head",
+				"sass/frame/layout/_headings.scss"
+			],
+			[
+				"th",
+				"sass/_theme.scss"
+			],
+			[
+				"header",
+				"views/head/_header.html.haml"
+			],
+			[
+				"ind",
+				"index.html.haml"
+			],
+			[
+				"cont",
+				"views/content/_content.html.haml"
+			],
+			[
+				"",
+				"index.html.haml"
+			],
+			[
+				"sty",
+				"stylesheets/styles.css"
+			],
+			[
+				"mixi",
+				"sass/frame/core/_mixins.scss"
+			],
+			[
+				"the",
+				"sass/_theme.scss"
+			],
+			[
+				"con",
+				"views/content/_content.html.haml"
+			],
+			[
+				"butt",
+				".sass-cache/53263d1f48ea10589e809ea07ff5b857c5eb7001/_button.scssc"
+			],
+			[
+				"split",
+				"sass/frame/component/_split.scss"
+			],
+			[
+				"ffrdhdmi",
+				"views/content/content-ffrdhdmi.html.haml"
+			],
+			[
+				"hdmi",
+				"views/content/content-rdphdmi.html.haml"
+			],
+			[
+				"home",
+				"views/content/content-home.html.haml"
+			],
+			[
+				"content-h",
+				"build_20130503105957/views/content/content-home.html"
+			],
+			[
+				"modal",
+				"views/content/pages/_display-modal.html.haml"
+			],
+			[
+				"d",
+				"views/content/_doc-tray.html.haml"
+			],
+			[
+				"so",
+				"views/content/content-soc.html.haml"
+			],
+			[
+				"chip",
+				"views/content/content-rdpchip.html.haml"
+			],
+			[
+				"scree",
+				"views/content/content-rdpscreen.html.haml"
+			],
+			[
+				"road",
+				"views/content/pages/_platform-roadmap.html.haml"
+			],
+			[
+				"pcb",
+				"views/content/pages/_platform-pcbguide.html.haml"
+			],
+			[
+				"dis",
+				"views/content/_subdisplay-svg.html.haml"
+			],
+			[
+				"sub",
+				"images/subschem.svg"
+			],
+			[
+				"do",
+				"views/content/_doc-tray.html.haml"
+			],
+			[
+				"pla",
+				"views/content/pages/_platform-pcb.html.haml"
+			],
+			[
+				"ad",
+				"views/content/_admin-controls.html.haml"
+			],
+			[
+				"svg",
+				"sass/_svg.scss"
+			],
+			[
+				"inde",
+				"index.html.haml"
+			],
+			[
+				"content",
+				"views/content/content-ffrd.html.haml"
+			],
+			[
+				"doc-",
+				"views/content/misc/_doc-viewer.html.haml"
+			],
+			[
+				"test",
+				"views/content/_content-schem-test.html.haml"
+			],
+			[
+				"pag",
+				"coffeescripts/pagescript.coffee"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\mpeutz\\Documents\\Transim\\SVN\\main\\Intel\\mdc\\Assets\\MDC-project.sublime-project"
+			],
+			[
+				"\\",
+				"C:\\Users\\mpeutz\\Documents\\Transim\\UID\\test\\TransimStyle_v2\\TransimSTyle_v2.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 398.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
