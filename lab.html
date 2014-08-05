@@ -1,0 +1,15 @@
+---
+layout: master
+---
+
+<!-- Add your site or application content here -->
+<h1>Lab-ish</h1>
+
+<ul>
+    {% for lab in site.categories.lab %}
+    <li>
+      <h3><a href="{{site.baseurl}}{{ lab.url }}">{{ lab.title }}</a></h3>
+      <p>{{ lab.meta }}</p>
+    </li>
+    {% endfor %}
+</ul>

@@ -3,4 +3,13 @@ layout: master
 ---
 
 <!-- Add your site or application content here -->
-<p>This is a blog?</p>
+<h1>This is a blog?</h1>
+
+<ul>
+    {% for article in site.categories.blog limit:2 %}
+    <li>
+      <h3><a href="{{site.baseurl}}{{ article.url }}">{{ article.title }}</a></h3>
+      <p>{{ article.meta }}</p>
+    </li>
+    {% endfor %}
+</ul>
