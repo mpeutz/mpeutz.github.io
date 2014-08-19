@@ -1,15 +1,23 @@
 ---
 layout: master
 ---
+<div class="blog">
 
-<!-- Add your site or application content here -->
-<h1>This is a blog?</h1>
+    {% include base-nav.html navclass='top-nav' %}
 
-<ul>
-    {% for article in site.categories.blog limit:2 %}
-    <li>
-      <h3><a href="{{site.baseurl}}{{ article.url }}">{{ article.title }}</a></h3>
-      <p>{{ article.meta }}</p>
-    </li>
-    {% endfor %}
-</ul>
+    <div class="scene_element scene_element--fadeinscale">
+
+        <!-- Add your site or application content here -->
+        <h1>pd Blog</h1>
+
+        <ul>
+            {% for article in site.categories.blog limit:8 %}
+            <li class="scene_element-{{forloop.index}} scene_element--fadeinup">
+              <h3><a href="{{site.baseurl}}{{ article.url }}">{{ article.title }}</a></h3>
+              <p>{{ article.exerpt }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+</div>
