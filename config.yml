@@ -1,6 +1,10 @@
 markdown: redcarpet
 baseurl: /
 exclude: ['README.md', 'assets/svg/*.svg']
+<<<<<<< HEAD
 permalink: pretty
 sass:
   style: compressed
+=======
+permalink: pretty
+>>>>>>> origin/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body
     font-family: 'open sans', sans-serif
     background-color: #333
@@ -171,4 +172,278 @@ svg.shader .disc
     .svg-path
         fill: none
         stroke: rgba(0,0,0,.5)
+=======
+body
+    font-family: 'open sans', sans-serif
+    background-color: #333
+    padding: 0
+    margin: 0
+
+p,
+.serif
+    font-family: 'Radley', serif
+    font-size: 1.25em
+
+.full-width
+    width: 100%
+
+.column-width
+    width: 1140px
+    margin: auto
+
+.header
+    background-image: url('../assets/images/growth2.jpg')
+    background-size: cover
+    background-position: 50%
+    width: 100%
+    height: 800px
+    position: relative
+    background-blend-mode: overlay
+    animation: colors 30s linear infinite
+
+.header-group
+    position: relative
+    top: 57%
+    left: 50%
+    display: inline-block
+    transform: translate3d(-50%, -50%, 0)
+    text-align: center
+
+
+.header-title
+    color: rgba(255,255,255,.9)
+    font-weight: 900
+    font-size: 7em
+    letter-spacing: 22px
+
+.header-subtitle
+    color: #fff
+    font-style: italic
+    font-size: 1.5em
+    width: 400px
+    margin: auto
+    margin-top: 60px
+
+.amper
+    background-image: url('../assets/images/ampersand.png')
+    top: 250px
+    left: 0
+    position: absolute
+    width: 250px
+    height: 250px
+
+.navbar
+    background-color: #fcfcfb
+
+nav ul
+    list-style: none
+    margin: 0
+    padding: 0
+    font-size: 0
+    background-color: #fff
+    li
+        display: inline-block
+        vertical-align: middle
+        font-size: 14px
+        a 
+            padding: 1.5em 2em
+            text-decoration: none
+            color: #333
+            display: inline-block
+            text-transform: uppercase
+
+.current
+    background-color: #d2e0e8
+
+.m-scene
+    .scene_element,
+    .scene_element-1,
+    .scene_element-2,
+    .scene_element-3,
+    .scene_element-4,
+    .scene_element-5
+        animation-duration: 0.25s
+        transition-timing-function: ease-in
+        animation-fill-mode: both
+
+    .scene_element--fadein
+        animation-name: fadein
+
+    .scene_element--fadeinup
+        animation-name: fadeinup
+
+    .scene_element--fadeindown
+        animation-name: fadeindown
+
+    .scene_element--fadeinright
+        animation-name: fadeinright
+
+    .scene_element--fadeinleft
+        animation-name: fadeinleft
+
+    .scene_element--fadeinscale
+        animation-name: fadeinscale
+        transform-origin: 50% 100%
+
+    &.is-exiting
+        .scene_element
+            animation-direction: alternate-reverse
+
+@for $i from 1 through 8
+    .m-scene .scene_element-#{$i}
+        animation-delay: ( $i * 10 ) * .01s
+
+
+@keyframes fadein
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
+@keyframes fadeinup
+    0%
+        opacity: 0
+        transform: translate3d(0, 100%, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes fadeindown
+    0%
+        opacity: 0
+        transform: translate3d(0, -100%, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes fadeinright
+    0%
+        opacity: 0
+        transform: translate3d(100%, 0, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes fadeinright
+    0%
+        opacity: 0
+        transform: translate3d(-100%, 0, 0)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes fadeinscale
+    0%
+        opacity: 0
+        transform: scale(.7)
+
+    100%
+        opacity: 1
+        transform: none
+
+@keyframes colors
+    0%
+        background-color: #8F7A7A
+    33%
+        background-color: #7A8F7E
+    66%
+        background-color: #7A7C8F
+    100%
+        background-color: #8F7A7A
+
+.home .scene_element,
+.gallery .scene_element,
+.blog .scene_element,
+.lab .scene_element,
+.about .scene_element,
+.blog-article .scene_element,
+.lab-article .scene_element
+    position: absolute
+    top: 61px
+    bottom: 0
+    left: 0
+    right: 0
+.gallery .scene_element,
+.blog .scene_element,
+.lab .scene_element,
+.about .scene_element,
+.blog-article .scene_element,
+.lab-article .scene_element
+    padding: 2em
+
+.home .scene_element
+    background-color: #fff
+.home .current
+    background-color: #ddd
+.gallery .scene_element
+    background-color: #1e8bc3
+.gallery .current
+    background-color: #a3ddff
+.blog .scene_element
+    background-color: #1ba39c
+.blog .current
+    background-color: #A1D8BE
+.lab .scene_element
+    background-color: #e87e04
+.lab .current
+    background-color: #FFE58E
+.about .scene_element
+    background-color: #f64747
+.about .current
+    background-color: #FFC0B0
+
+.blog-article .scene_element
+    background-color: #f62459
+.lab-article .scene_element
+    background-color: #87d37c
+
+
+.made-in
+    text-align: center
+
+h1,
+h2
+    margin: 0
+    font-weight: 900
+
+.main
+    height: 100%
+    margin-bottom: -40px
+
+html,
+body 
+    height: 100%
+    padding: 0
+    margin: 0
+.content-wrap
+    min-height: 100%
+    margin-bottom: -40px 
+.content-wrap:after
+    content: ""
+    display: block
+.footer,
+.content-wrap:after
+    height: 30px 
+.footer
+    z-index: 100
+    font-size: 10px
+    text-transform: uppercase
+    line-height: 1
+    line-height: 30px
+
+.heart-oregon 
+    height: 20px
+    width: 20px
+    display: inline-block
+    position: relative
+    top: 5px
+    .svg-path
+        fill: none
+        stroke: rgba(0,0,0,.5)
+>>>>>>> origin/master
         stroke-width: 8px

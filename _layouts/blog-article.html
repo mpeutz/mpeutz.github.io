@@ -2,13 +2,21 @@
 layout: master
 ---
 
+<<<<<<< HEAD
 <div class="blog-article" itemscope itemtype="http://schema.org/Article">
+=======
+<div class="blog-article">
+>>>>>>> origin/master
 
     {% include base-nav.html navclass='top-nav' %}
 
     <div class="scene_element scene_element--fadeinup">
+<<<<<<< HEAD
         <h1 itemprop="name">{{page.title}}</h1>
         <h6  itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %d, %Y' }}</h6>
+=======
+        <h1>{{page.title}}</h1>
+>>>>>>> origin/master
         <a href="{{site.baseurl}}/blog" class=""> &gt; Back to Blog</a>
 
         {{content}}
@@ -16,6 +24,10 @@ layout: master
         <footer>
             <p>Source: <a href="{{page.source}}">{{page.source}}</a></p>
         </footer>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/master
     </div>
 </div>
