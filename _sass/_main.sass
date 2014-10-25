@@ -1,0 +1,174 @@
+body
+    font-family: 'open sans', sans-serif
+    background-color: #333
+    padding: 0
+    margin: 0
+
+p,
+.serif
+    font-family: Georgia, serif
+    font-size: 1.25em
+
+.full-width
+    width: 100%
+
+.column-width
+    width: 1140px
+    margin: auto
+
+.header
+    background-image: url('../assets/images/growth2.jpg')
+    background-size: cover
+    background-position: 50%
+    width: 100%
+    height: 800px
+    position: relative
+    background-blend-mode: overlay
+    animation: colors 30s linear infinite
+
+.header-group
+    position: relative
+    top: 57%
+    left: 50%
+    display: inline-block
+    transform: translate3d(-50%, -50%, 0)
+    text-align: center
+
+
+.header-title
+    color: rgba(255,255,255,.9)
+    font-weight: 900
+    font-size: 7em
+    letter-spacing: 22px
+
+.header-subtitle
+    color: #fff
+    font-style: italic
+    font-size: 1.5em
+    width: 400px
+    margin: auto
+    margin-top: 60px
+
+.amper
+    background-image: url('../assets/images/ampersand.png')
+    top: 250px
+    left: 0
+    position: absolute
+    width: 250px
+    height: 250px
+
+.navbar
+    background-color: #fcfcfb
+
+nav
+    position: relative
+    z-index: 10
+
+nav ul
+    list-style: none
+    margin: 0
+    padding: 0
+    font-size: 0
+
+    li
+        display: inline-block
+        vertical-align: middle
+        font-size: 14px
+        position: relative
+        a
+            padding: 1.5em 2em
+            text-decoration: none
+            color: #fff
+            display: inline-block
+            text-transform: uppercase
+            position: relative
+
+.current
+    background-color: rgba(255, 255, 255, .4)
+.home .scene_element
+    background-color: #fff
+.home .current
+    background-color: transparentize(#ddd, .7)
+.gallery .scene_element
+    background-color: #1e8bc3
+.gallery .current
+    background-color: transparentize(#a3ddff, .7)
+.blog .scene_element
+    background-color: #1ba39c
+.blog .current
+    background-color: transparentize(#a1d8be, .7)
+.lab .scene_element
+    background-color: #e87e04
+.lab .current
+    background-color: transparentize(#ffe58e, .7)
+.about .scene_element
+    background-color: #f64747
+.about .current
+    background-color: transparentize(#ffc0b0, .7)
+
+.blog-article .scene_element
+    background-color: #f62459
+.lab-article .scene_element
+    background-color: #87d37c
+
+
+.made-in
+    text-align: center
+
+h1,
+h2
+    margin: 0
+    font-weight: 900
+
+.main
+    height: 100%
+    margin-bottom: -40px
+
+html,
+body
+    height: 100%
+    padding: 0
+    margin: 0
+.content-wrap
+    min-height: 100%
+    margin-bottom: -40px
+.content-wrap:after
+    content: ""
+    display: block
+.footer,
+.content-wrap:after
+    height: 30px
+.footer
+    z-index: 100
+    font-size: 10px
+    text-transform: uppercase
+    line-height: 1
+    line-height: 30px
+.flash,
+.shader
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+svg.flash .disc
+    animation: fader .6s
+    fill: rgba(255,255,255,0.8)
+svg.shader .disc
+    animation: fader .6s
+    fill: rgba(0,0,0,.3)
+@keyframes fader
+    to
+        fill: rgba(255, 255, 255, 0)
+
+.heart-oregon
+    height: 20px
+    width: 20px
+    display: inline-block
+    position: relative
+    top: 5px
+    .svg-path
+        fill: none
+        stroke: rgba(0,0,0,.5)
+        stroke-width: 8px
