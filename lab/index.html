@@ -1,15 +1,26 @@
 ---
 layout: master
+title: Labs
+meta: experiments with SASS, jQuery and other front end elements.
 ---
 
-<!-- Add your site or application content here -->
-<h1>Labs</h1>
+<div class="lab">
 
-<ul>
-    {% for lab in site.categories.lab %}
-    <li>
-      <h3><a href="{{site.baseurl}}{{ lab.url }}">{{ lab.title }}</a></h3>
-      <p>{{ lab.meta }}</p>
-    </li>
-    {% endfor %}
-</ul>
+    {% include base-nav.html navclass='top-nav' %}
+
+    <div class="scene_element scene_element--fadeinscale">
+
+        <!-- Add your site or application content here -->
+        <h1>Labs</h1>
+
+        <ul>
+            {% for lab in site.categories.lab %}
+            <li class="scene_element-{{forloop.index}} scene_element--fadeinup">
+              <h3><a href="{{site.baseurl}}{{ lab.url }}">{{ lab.title }}</a></h3>
+              <p>{{ lab.meta }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
