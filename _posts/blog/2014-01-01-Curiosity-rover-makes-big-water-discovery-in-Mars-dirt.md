@@ -1,8 +1,11 @@
 ---
 layout: blog-article
+permalink: mars-dirt
 title: Curiosity rover makes big water discovery in Mars dirt
 exerpt: Future Mars explorers may be able to get all the water they need out of the red dirt beneath their boots.
 link: http://www.space.com/22949-mars-water-discovery-curiosity-rover.html
+img: ampersand.png
+imgTitle: Test
 category: blog
 ---
 
