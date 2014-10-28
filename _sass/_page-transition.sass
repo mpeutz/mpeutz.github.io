@@ -5,7 +5,7 @@
     .scene_element-3,
     .scene_element-4,
     .scene_element-5
-        animation-duration: 0.25s
+        animation-duration: .5s
         transition-timing-function: ease-in
         animation-fill-mode: both
 
@@ -26,7 +26,7 @@
 
     .scene_element--fadeinscale
         animation-name: fadeinscale
-        transform-origin: 50% 100%
+        transform-origin: 50vw 50vh
 
     &.is-exiting
         .scene_element
@@ -76,19 +76,17 @@
         opacity: 0
         transform: translate3d(-100%, 0, 0)
 
-    100%
+    50%
         opacity: 1
         transform: none
 
 @keyframes fadeinscale
     0%
         opacity: 0
-        transform: scale(.7)
-
+        transform: scale(1.15)
     100%
         opacity: 1
         transform: none
-
 @keyframes colors
     0%
         background-color: #8F7A7A
@@ -106,15 +104,12 @@
 .about .scene_element,
 .blog-article .scene_element,
 .lab-article .scene_element
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
+    position: relative
+    // top: 0
+    // left: 0
+    min-height: 100vh
+    height: 100%
+    width: 100%
 .gallery .scene_element,
-.blog .scene_element,
-.lab .scene_element,
-.about .scene_element,
-.blog-article .scene_element,
-.lab-article .scene_element
+.about .scene_element
     padding: 5em

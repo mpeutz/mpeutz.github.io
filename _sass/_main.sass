@@ -1,13 +1,43 @@
+*
+    box-sizing: border-box
+html,
 body
-    font-family: 'open sans', sans-serif
-    background-color: #333
+    height: 100%
     padding: 0
     margin: 0
+body
+    font-family: 'open sans', sans-serif
+    letter-spacing: 0.01rem
+    color: #3A4145
+
+.content-wrap,
+.main,
+body,
+html
+    min-height: 100%
+.main,
+.content-wrap
+    margin-bottom: -30px
+.content-wrap:after
+    content: ""
+    display: block
+.footer, .page-wrap:after
+    height: 30px
 
 p,
 .serif
     font-family: Georgia, serif
-    font-size: 1.25em
+    line-height: 1.75em
+    font-size: 1.15em
+    -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1
+    -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1
+    -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1
+    margin: 0 0 1.75em 0
+
+h1,
+h2,
+h3
+    font-weight: 300
 
 .full-width
     width: 100%
@@ -28,11 +58,11 @@ p,
 
 .header-group
     position: relative
-    top: 57%
-    left: 50%
-    display: inline-block
-    transform: translate3d(-50%, -50%, 0)
+    top: 20%
+    left: 0
+    width: 90%
     text-align: center
+    margin: auto
 
 
 .header-title
@@ -49,19 +79,13 @@ p,
     margin: auto
     margin-top: 60px
 
-.amper
-    background-image: url('../assets/images/ampersand.png')
-    top: 250px
-    left: 0
-    position: absolute
-    width: 250px
-    height: 250px
-
 .navbar
     background-color: #fcfcfb
 
 nav
-    position: relative
+    position: absolute
+    top: 0
+    left: 0
     z-index: 10
 
 nav ul
@@ -94,22 +118,27 @@ nav ul
 .gallery .current
     background-color: transparentize(#a3ddff, .7)
 .blog .scene_element
-    background-color: #1ba39c
+    //background-color: #1ba39c
+    background-color: #fff
 .blog .current
-    background-color: transparentize(#a1d8be, .7)
+    //background-color: transparentize(#a1d8be, .7)
 .lab .scene_element
-    background-color: #e87e04
+    //background-color: #e87e04
+    background-color: #fff
 .lab .current
-    background-color: transparentize(#ffe58e, .7)
+    //background-color: transparentize(#ffe58e, .7)
 .about .scene_element
     background-color: #f64747
 .about .current
     background-color: transparentize(#ffc0b0, .7)
 
 .blog-article .scene_element
-    background-color: #f62459
-.lab-article .scene_element
+    //background-color: #f62459
+    background-color: #fff
+.lab-article .scene_element .post-header
     background-color: #87d37c
+.lab-article .scene_element
+    background-color: #fff
 
 
 .made-in
@@ -118,32 +147,72 @@ nav ul
 h1,
 h2
     margin: 0
-    font-weight: 900
 
-.main
-    height: 100%
-    margin-bottom: -40px
-
-html,
-body
-    height: 100%
-    padding: 0
-    margin: 0
-.content-wrap
-    min-height: 100%
-    margin-bottom: -40px
-.content-wrap:after
-    content: ""
-    display: block
+.post-header,
+.blog-header,
+.lab-header
+    height: 65vh
+    min-height: 180px
+    background-position: 50%
+    background-size: cover
+    margin-bottom: 3em
+    h1
+        position: relative
+        top: 32.5vh
+        transform: translateY(-50%)
+        text-align: center
+        color: #fff
+        font-size: 3.5em
+        max-width: 720px
+        margin: auto
+h6
+    position: relative
+    text-transform: uppercase
+.blog-header,
+.lab-header
+    height: 45vh
+    h1
+        top: 22.5vh
+.blog-header
+    background-image: url('../assets/images/abstract II.png')
+.lab-header
+    background-image: url('../assets/images/Piggy.png')
+.post-content,
+.share
+    max-width: 720px
+    margin: auto
+    padding-bottom: 2em
+.post-content
+    padding-top: 2em
 .footer,
 .content-wrap:after
     height: 30px
-.footer
-    z-index: 100
-    font-size: 10px
-    text-transform: uppercase
-    line-height: 1
-    line-height: 30px
+
+.article-list
+    list-style: none
+    margin: 0 auto
+    padding: 0
+    width: 720px
+    h1
+        width: 720px
+    a
+        text-decoration: none
+        color: #999
+    p
+        color: #555
+.article-list-thumb
+    height: 80px
+    width: 80px
+    border-radius: 50%
+    float: left
+    background-size: cover
+    shape-outside: circle(42px at 48.2% 50.85%)
+    margin-right: 30px
+
+.blog-heading,
+.lab-heading
+    margin-bottom: 2em
+
 .flash,
 .shader
     position: absolute
@@ -172,31 +241,3 @@ svg.shader .disc
         fill: none
         stroke: rgba(0,0,0,.5)
         stroke-width: 8px
-
-.share-buttons-label
-    color: #ccc
-    font-weight: bold
-.custom-social-buttons
-    margin-bottom: 120px
-.custom-social-button
-    height: 30px
-    border-left: 1px solid #ccc
-    width: 32%
-    text-align: center
-    float: left
-.custom-social-button.googleplus
-    border-right: 1px solid #ccc
-    float: right
-.custom-social-button a
-    vertical-align: middle
-    color: #ccc
-    font-weight: bold
-.custom-social-button a i
-    display: block
-    width: 100%
-    height: 100%
-    line-height: 30px
-.custom-social-button a:hover
-    vertical-align: middle
-    color: #555
-    font-weight: bold

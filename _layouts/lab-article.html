@@ -2,19 +2,26 @@
 layout: master
 ---
 
-<div class="lab-article">
+<div class="lab-article" itemscope itemtype="http://schema.org/Article">
 
     {% include base-nav.html navclass='top-nav' %}
 
-    <div class="scene_element scene_element--fadeinup">
-        <h1>{{page.title}}</h1>
-        <a href="{{site.baseurl}}/lab" class=""> &gt; Back to Labs</a>
+    <div class="scene_element scene_element--fadeinscale">
+    <div class="post-header" {% if page.img %} style="background-image: url('../assets/images/{{ page.img }}');" {% endif %}>
+        <h1 itemprop="name">{{page.title}}</h1>
+    </div>
 
-        {{content}}
+        <div class="post-content">
+            <h6 itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %d, %Y' }}</h6>
+            {{content}}
+        </div>
 
-        <footer>
-            <p>Source: <a href="{{page.source}}">{{page.source}}</a></p>
-        </footer>
-        
+
+        <div class="share">
+            {% if page.source %}<p>Source: <a href="{{page.source}}">{{page.source}}</a></p>{% endif %}
+            <a class="btn" href="http://twitter.com/intent/tweet?url=peutzdesign.com/{{ page.permalink }}&text={{page.title}}&via=mpeutz" target="_blank">Tweet</a> | <a class="btn" href="http://facebook.com/sharer.php?u={{site.url}}{{page.permalink}}" target="_blank">Like</a> | <a class="btn" href="https://plus.google.com/share?url={{site.url}}{{page.permalink}}" target="_blank">+1</a> | <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.permalink}}&title={{page.title}}&summary={{ post.exerpt }}" target="_blank">LinkedIn</a> | <a href="https://pinterest.com/pin/create/button/?url='{{site.url}}/assets/images/{{page.img}}&media={{page.imgTitle}}&description={{ page.exerpt }}" target="_blank">Pin it</a>
+        </div>
+
+
     </div>
 </div>

@@ -38,7 +38,6 @@
             <div class=content-wrap>
             {{content}}
             </div>
-
             <div class="footer scene_element scene_element--fadein"> {% include footer.html %}</div>
         </div>
 
@@ -47,7 +46,6 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.min.js"></script>
         <script src="{{site.baseurl}}/script/smoothState.js"></script>
-        <script src="{{site.baseurl}}/script/share.js"></script>
         <script src="{{site.baseurl}}/script/page-script.js"></script>
 
         <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
@@ -55,10 +53,10 @@
         <script>
             WebFont.load({
                 google: {
-                    families: [ 'Open+Sans:400,700,900:latin' ]
+                    families: [ 'Open+Sans:300,400,700,900:latin' ]
                 }
             });
-
+            $('.header-title').fitText(1, { minFontSize: '20px', maxFontSize: '120px' });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

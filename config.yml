@@ -1,7 +1,0 @@
-markdown: redcarpet
-baseurl: /
-url: http://peutzdesign.com
-exclude: ['README.md', 'assets/svg/*.svg']
-permalink: pretty
-sass:
-  style: compressed

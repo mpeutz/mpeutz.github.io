@@ -1,8 +1,11 @@
 ---
 layout: blog-article
+permalink: blog/strange-planet
 title: A strange lonely planet found without a star
 exerpt: An international team of astronomers has discovered an exotic young planet that is not orbiting a star.
 link: http://phys.org/news/2013-10-strange-lonely-planet-star.html
+img: growth2.jpg
+imgTitle: growth
 category: blog
 ---
 

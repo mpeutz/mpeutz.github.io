@@ -1,7 +1,9 @@
 ---
 layout: master
 title: Labs
-meta: experiments with SASS, jQuery and other front end elements.
+exerpt: experiments with SASS, jQuery and other front end elements.
+paginate: 2
+paginate_path: "/lab/page:num"
 ---
 
 <div class="lab">
@@ -11,13 +13,18 @@ meta: experiments with SASS, jQuery and other front end elements.
     <div class="scene_element scene_element--fadeinscale">
 
         <!-- Add your site or application content here -->
-        <h1>Labs</h1>
+        <div class="lab-header">
+            <h1>Lab</h1>
+        </div>
 
-        <ul>
+        <ul class="article-list">
             {% for lab in site.categories.lab %}
             <li class="scene_element-{{forloop.index}} scene_element--fadeinup">
-              <h3><a href="{{site.baseurl}}{{ lab.url }}">{{ lab.title }}</a></h3>
-              <p>{{ lab.meta }}</p>
+                <a href="{{site.baseurl}}{{ lab.url }}">
+                  <div class="article-list-thumb" style=" background-color: #87d37c; {% if lab.img %} background-image: url('../assets/images/{{ lab.img }}'); {% endif %} "></div>
+                  <h2>{{ lab.title }}</h2>
+                  <p>{{ lab.exerpt }}</p>
+                </a>
             </li>
             {% endfor %}
         </ul>
