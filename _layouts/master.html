@@ -1,72 +1,83 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% if page.title %}{{page.title}} . {% endif %}Peutzdesign{% if page.titleAfter %} . {{page.titleAfter}}{% endif %}</title>
-        <meta name="description" content="{{page.meta}}">
 
-        <link rel="stylesheet" href="{{site.baseurl}}/css/style.css">
+<head>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon/favicon-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon/favicon-160x160.png" sizes="160x160">
-        <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon/favicon-32x32.png" sizes="32x32">
-        <meta name="msapplication-TileColor" content="#603cba">
-        <meta name="msapplication-TileImage" content="{{site.baseurl}}/assets/favicon/mstile-144x144.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{page.title}} . {% endif %}Peutzdesign{% if page.titleAfter %} . {{page.titleAfter}}{% endif %}</title>
+    <meta name="description" content="{{page.meta}}">
 
-        {% include sprite.svg %}
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 
-    </head>
-    <body>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#eb5757">
+    <meta name="theme-color" content="#eb5757">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+
+    <link rel="alternate" type="application/rss+xml" title="Peutzdesign RSS" href="/feed.xml" />
+
+</head>
+
+
+<body id="body">
+    <div id="main" class="main mp-scene">
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="main" class="main m-scene">
+        <header id="navigation">
+            {% include navigation.html navclass='top-nav' %}
+        </header>
+        <div id="content" class="mp-page" data-page="{% if page.title %}mp-{{ page.url | replace:'/',' ' | truncatewords: 1 | remove:'...' }}{% else %}mp-home{% endif %}">
+            <!-- {% include loader.html %} -->
+            <div class="mp-page-back">
+                <main class="mp-content {% if page.is_post %} is-post{% endif %}" role="main">
+                    {{content}}
+                </main>
 
-            <div class=content-wrap>
-            {{content}}
             </div>
-            <div class="footer scene_element scene_element--fadein"> {% include footer.html %}</div>
+
+            <footer id="footer">
+                {% include footer.html %}
+            </footer>
+
         </div>
 
+    </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.min.js"></script>
-        <script src="{{site.baseurl}}/script/smoothState.js"></script>
-        <script src="{{site.baseurl}}/script/page-script.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
 
-        <script>
-            WebFont.load({
-                google: {
-                    families: [ 'Open+Sans:300,400,700,900:latin' ]
-                }
-            });
-            $('.header-title').fitText(1, { minFontSize: '20px', maxFontSize: '120px' });
-        </script>
+    <!--CDN link for the latest TweenMax-->
+    <script src="{{site.baseurl}}/script/smoothState.js"></script>
+    <script src="{{site.baseurl}}/script/page-script.js"></script>
+    <script src="{{site.baseurl}}/script/perfect-scrollbar.js"></script>
+    <script src="{{site.baseurl}}/script/hammer-time.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-11132408-11','auto');ga('send','pageview');
-        </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-11132408-11', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
 </html>

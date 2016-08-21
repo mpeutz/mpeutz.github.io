@@ -2,26 +2,43 @@
 layout: master
 ---
 
-<div class="lab-article" itemscope itemtype="http://schema.org/Article">
+<div class="mp-post mp-lab-article" itemscope itemtype="http://schema.org/Article">
 
-    {% include base-nav.html navclass='top-nav' %}
+    <div class="mp-scene mp-element mp-fade">
+        <div class="mp-post-header">
 
-    <div class="scene_element scene_element--fadeinscale">
-    <div class="post-header" {% if page.img %} style="background-image: url('../assets/images/{{ page.img }}');" {% endif %}>
-        <h1 itemprop="name">{{page.title}}</h1>
-    </div>
+            <div class="mp-post-image" style="background-color: #555; {% if page.img %}background-image: url('../../assets/images/{{ page.img }}'); {% else %} background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%); {% endif %}">{{asset-path}}</div>
+                <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
+                <div class="mp-post-category">
+                    {{page.category}}
+                </div>
+        </div>
 
-        <div class="post-content">
-            <h6 itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %d, %Y' }}</h6>
+        <div class="mp-post-meta">
+            <div class="mp-post-readablity">
+                {% assign reading_time = content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+                {% if reading_time <= 1 %}
+                  {% assign reading_time = '1' | append:' min read' %}
+                {% else %}
+                  {% assign reading_time = reading_time | append:' min read' %}
+                {% endif %}
+                <span class="mp-article-readtime">{{ reading_time }}</span>
+            </div>
+            <div class="mp-post-date" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: '%B %d, %Y' }}</div>
+        </div>
+
+        <div class="mp-post-content">
+            <div class="mp-post-back"><a href="/lab"><svg class="mp-post-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M41.3 310.7l192 192c12.5 12.4 32.8 12.4 45.3 0 12.5-12.6 12.5-33 0-45.4L141.2 320h371c17.6 0 32-14.3 32-32s-14.4-32-32-32H141l137.4-137.3c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.4 0l-192 192c-6.2 6.2-9.4 14.4-9.3 22.6-.2 8.2 3 16.4 9.3 22.7z"/></svg><div class="mp-post-backtext">
+            Back to Lab
+            </div></a></div>
             {{content}}
+            {% if page.source %}<div class="mp-source">Source: <a href="{{page.source}}">{{page.source}}</a></div>{% endif %}
         </div>
 
+            {% include share.html %}
 
-        <div class="share">
-            {% if page.source %}<p>Source: <a href="{{page.source}}">{{page.source}}</a></p>{% endif %}
-            <a class="btn" href="http://twitter.com/intent/tweet?url=peutzdesign.com/{{ page.permalink }}&text={{page.title}}&via=mpeutz" target="_blank">Tweet</a> | <a class="btn" href="http://facebook.com/sharer.php?u={{site.url}}{{page.permalink}}" target="_blank">Like</a> | <a class="btn" href="https://plus.google.com/share?url={{site.url}}{{page.permalink}}" target="_blank">+1</a> | <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.permalink}}&title={{page.title}}&summary={{ post.exerpt }}" target="_blank">LinkedIn</a> | <a href="https://pinterest.com/pin/create/button/?url='{{site.url}}/assets/images/{{page.img}}&media={{page.imgTitle}}&description={{ page.exerpt }}" target="_blank">Pin it</a>
+
+            {% include author.html %}
+
         </div>
-
-
     </div>
-</div>

@@ -1,9 +1,0 @@
-<nav>
-    <ul class="{{include.navclass}}">
-        <li><a href="/" class="{% if page.path == '/index.html' %}current{% endif %}">Home</a></li>
-        <li><a href="/portfolio" class="{% if page.url contains 'portfolio' %}current{% endif %}">Portfolio</a></li>
-        <li><a href="/blog" class="{% if page.path contains 'blog' %}current{% endif %}">Blog</a></li>
-        <li><a href="/lab" class="{% if page.path contains 'lab' %}current{% endif %}">Lab</a></li>
-        <li><a href="/about" class="{% if page.url contains 'about' %}current{% endif %}">About</a></li>
-    </ul>
-</nav>
