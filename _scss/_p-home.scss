@@ -1,0 +1,110 @@
+/* ==========================================================================
+    Home Page
+   ========================================================================== */
+
+.mp-one,
+.mp-two {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+	}
+
+.mp-home .mp-one {
+    position: relative;
+    color: #fff;
+    background-color: #83827e;
+    background-image: url('../assets/images/growth2.jpg');
+    background-size: cover;
+	}
+
+@supports (mix-blend-mode: soft-light) {
+    .mp-one:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
+
+        mix-blend-mode: soft-light;
+	    }
+	}
+
+.mp-one .mp-pane-motto,
+.mp-two .mp-pane-motto {
+    font-family: 'Futura', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+
+
+    @include responsiveNum(font-size, 60px, 96px);
+	}
+
+.mp-one .mp-pane-motto {
+    display: none;
+	}
+
+.mp-one .mp-pane-motto:first-child {
+    border-top: 2px solid #fff;
+	}
+
+.mp-one .mp-pane-motto:last-child {
+    border-bottom: 2px solid  #fff;
+	}
+
+.mp-two .mp-pane-motto:first-child {
+    border-top: 3px solid lighten($text-color, 20%);
+	}
+
+.mp-two .mp-pane-motto:last-of-type {
+    border-bottom: 3px solid lighten($text-color, 20%);
+	}
+
+.mp-article-text,
+.mp-home-text {
+    width: 60%;
+    max-width: 440px;
+    margin-top: 4em;
+    text-align: center;
+	}
+
+.mp-blog .mp-one .mp-motto {
+    padding-top: 45px;
+}
+@media (max-width: 1000px) {
+    .mp-wrap {
+        flex-direction: column;
+        min-height: 100vh;
+	    }
+
+    .mp-one {
+        flex: 1 0 65%;
+    }
+
+    .mp-two {
+        flex: 1 0 35%;
+    }
+
+    .mp-one .mp-pane-motto {
+        display: block;
+	    }
+
+
+    .mp-two .mp-pane-motto {
+        display: none;
+	    }
+
+    .mp-home-text {
+        margin-top: 0;
+	    }
+	}
+
+@media (min-width: #{$mobile}) {
+    .mp-one {
+        background-position: 50% 70%;
+	    }
+	}

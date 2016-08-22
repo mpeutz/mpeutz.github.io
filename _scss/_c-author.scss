@@ -1,0 +1,44 @@
+/* ==========================================================================
+    Author
+   ========================================================================== */
+
+.mp-author {
+    display: flex;
+    margin-top: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    border-top: 1px solid #ccc;
+	}
+
+.mp-author-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 1em;
+    margin-top: 5px;
+    border-radius: 30px;
+    background-color: $body-color;
+    background-image: url('../assets/images/avatar.jpg');
+    background-size: cover;
+
+    flex: 0 0 60px;
+	}
+
+.mp-author-blurb {
+    font-family: sans-serif;
+	}
+
+.mp-blurb-name,
+.mp-blurb-date {
+    font-family: 'Futura', sans-serif;
+	}
+
+.mp-blurb-role {
+    opacity: .75;
+	}
+
+.mp-blurb-date {
+    font-size: .6em;
+    padding-top: .3em;
+    text-transform: uppercase;
+    opacity: .5;
+	}

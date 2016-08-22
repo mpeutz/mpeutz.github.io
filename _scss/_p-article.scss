@@ -1,0 +1,153 @@
+/* ==========================================================================
+    Article (Blog - Lab)
+   ========================================================================== */
+
+
+.mp-post-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
+
+    justify-content: center;
+    align-items: center;
+	}
+
+.mp-post-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    background-position: 50%;
+    background-size: cover;
+	}
+
+.mp-post-image:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .4;
+    background-color: #333;
+	}
+
+.mp-post-title {
+    font-family: 'Futura', sans-serif;
+    line-height: .8;
+    position: relative;
+    z-index: 10;
+    max-width: $col;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+
+    @include responsiveNum(font-size, 22px, 48px);
+	}
+
+.mp-post-category {
+    font-size: 12px;
+    position: relative;
+    z-index: 15;
+    margin-top: 1.5em;
+    padding: .25em .75em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .3);
+	}
+
+.mp-post-meta {
+    padding: 3em 0;
+	}
+
+.mp-post-readablity {
+    cursor: default;
+    transition: opacity .3s ease-out;
+    opacity: .3;
+	}
+
+.mp-post-readablity:hover {
+    opacity: 1;
+	}
+
+.mp-post-meta,
+.mp-post-content,
+.mp-source,
+.mp-share,
+.mp-author {
+    max-width: $col;
+    margin: auto;
+	}
+
+.mp-post-content {
+    position: relative;
+    padding-bottom: 3em;
+
+    @include responsiveNum(font-size, 14px, 20px, 320px, 705px);
+	}
+
+.mp-post-back {
+    position: absolute;
+    top: .3em;
+    left: -2em;
+    display: none;
+    a:after {
+        display: none;
+	    }
+	}
+
+.fix-back .mp-post-back {
+    position: fixed;
+    top: 18px;
+    left: calc(50% - 340px);
+    opacity: 1;
+	}
+
+.mp-post-arrow {
+    width: 24px;
+    height: 24px;
+
+    fill: $text-color;
+	}
+
+.mp-post-backtext {
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1em;
+    width: 30px;
+    text-align: center;
+    color: $text-color;
+	}
+
+.mp-source {
+    font-size: .7em;
+    text-align: center;
+	}
+
+.mp-source a:link {
+    //color: $text-color;
+	}
+
+.mp-author {
+    margin: 2em auto 0;
+	}
+
+
+@media (min-width: #{$mobile}) {
+    .mp-post-back {
+        display: block;
+        transition: opacity .3s ease-in;
+        opacity: 0;
+	    }
+	}
+
+@media (max-width: #{$col}) {
+    .mp-post-meta {
+        padding: 3em 1em;
+	    }
+	}

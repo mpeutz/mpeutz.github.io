@@ -2,35 +2,35 @@
 (function($) {
     'use strict';
 
-//     var deBouncer = function($, cf, of, interval) {
-//         // http://www.hnldesign.nl/work/code/debouncing-events-with-jquery/
-//         var debounce = function(func, threshold, execAsap) {
-//             var timeout;
-//             return function debounced() {
-//                 var obj = this,
-//                     args = arguments;
-//
-//                 function delayed() {
-//                     if (!execAsap)
-//                         func.apply(obj, args);
-//                     timeout = null;
-//                 }
-//                 if (timeout)
-//                     clearTimeout(timeout);
-//                 else if (execAsap)
-//                     func.apply(obj, args);
-//                 timeout = setTimeout(delayed, threshold || interval);
-//             };
-//         };
-//         jQuery.fn[cf] = function(fn) {
-//             return fn ? this.bind(of, debounce(fn)) : this.trigger(cf);
-//         };
-//     };
-//
-//     deBouncer(jQuery,'smartresize', 'resize', 100);
-// deBouncer(jQuery,'smartscroll', 'scroll', 100);
-// deBouncer(jQuery,'smartmousemove', 'mousemove', 100);
-// deBouncer(jQuery,'touchpause', 'touchmove', 100);
+    var deBouncer = function($, cf, of, interval) {
+        // http://www.hnldesign.nl/work/code/debouncing-events-with-jquery/
+        var debounce = function(func, threshold, execAsap) {
+            var timeout;
+            return function debounced() {
+                var obj = this,
+                    args = arguments;
+
+                function delayed() {
+                    if (!execAsap)
+                        func.apply(obj, args);
+                    timeout = null;
+                }
+                if (timeout)
+                    clearTimeout(timeout);
+                else if (execAsap)
+                    func.apply(obj, args);
+                timeout = setTimeout(delayed, threshold || interval);
+            };
+        };
+        jQuery.fn[cf] = function(fn) {
+            return fn ? this.bind(of, debounce(fn)) : this.trigger(cf);
+        };
+    };
+
+    deBouncer(jQuery, 'smartresize', 'resize', 100);
+    deBouncer(jQuery, 'smartscroll', 'scroll', 100);
+    deBouncer(jQuery, 'smartmousemove', 'mousemove', 100);
+    deBouncer(jQuery, 'touchpause', 'touchmove', 100);
 
 
     function checkNav() {
@@ -40,6 +40,8 @@
                 var offset = $(this).offset();
                 // $('.mp-nav-current').animate({'left': offset.left + ($(this).outerWidth() / 2)}, 500);
                 $(this).addClass("current");
+            } else if(pathname == "/digital" || pathname == "/interface" || pathname == "/traditional") {
+                $('#mp-portfolio').addClass("current");
             }
         });
 
@@ -114,10 +116,6 @@
         }
     };
 
-
-
-    //var wrap = $("#body")[0];
-
     $(document).on("scroll", function(e) {
         if ($(document).scrollTop() > 413) {
             $("#body").addClass("fix-back");
@@ -139,13 +137,6 @@
     //         });
     //
     // }
-
-    // var boundless = {
-    //     show : function( ) {
-    //         $('body').append("<div>");
-    //     },
-    //     hide : function( ) {  }
-    // };
 
 
     var options = {

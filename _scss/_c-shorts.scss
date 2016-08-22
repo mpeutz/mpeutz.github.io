@@ -1,0 +1,97 @@
+/* ==========================================================================
+    Shortcodes
+   ========================================================================== */
+
+.mp-post-figure {
+    position: relative;
+    max-width: $col;
+    height: 300px;
+    margin: 2em 0 4em;
+	}
+
+.mp-post-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+	}
+
+.mp-post-caption {
+    font-family: 'georgia', serif;
+    font-size: .85em;
+    font-style: italic;
+    padding-top: .7em;
+    text-align: center;
+	}
+
+.is-expanded.mp-post-img {
+    z-index: 250;
+    background-color: $body-color;
+    background-size: contain;
+	}
+
+.caption-expanded {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+
+    @include responsiveNum(font-size, 16px, 24px);
+	}
+
+.mp-post-content a,
+.caption-expanded a,
+.mp-pane-content a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $logo-color;
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        content: '';
+        transition: all .15s ease-out;
+        border-bottom: 2px solid $logo-color;
+	    }
+    &:hover:after {
+        width: 100%;
+	    }
+	}
+
+blockquote {
+    position: relative;
+    margin: 1.5em 0;
+    padding: 0 2em;
+    quotes: '“' '”' '‘' '’';
+    color: lighten($text-color, 15);
+	}
+blockquote h1 {
+    font-family: 'Futura',sans-serif;
+    font-size: 22px;
+    margin: 0;
+	}
+
+blockquote:before {
+    font-size: 4em;
+    position: absolute;
+    color: $logo-color;
+    line-height: 0;
+    top: .5em;
+    left: 0;
+    content: open-quote;
+	}
+
+blockquote p {
+    display: inline;
+	}
+
+.mp-post-content hr,
+.mp-hr {
+    border-top: 4px double #8b929d;
+    margin-bottom: 1.5em;
+}

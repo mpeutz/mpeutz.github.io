@@ -1,0 +1,249 @@
+/* ==========================================================================
+    Navigation
+   ========================================================================== */
+
+.mp-nav {
+    position: relative;
+    padding-right: 2em;
+    user-select: none;
+    text-align: right;
+	}
+
+.mp-logo {
+    position: absolute;
+    z-index: $z-logo;
+    top: .9em;
+    left: 1em;
+    width: 1.25em;
+    height: 1.25em;
+    transition: all .3s ease-out;
+	}
+
+.mp-home .mp-logo {
+    top: 1.3em;
+    left: 2em;
+    width: 60px;
+    height: 60px;
+    padding: 1em;
+    background-color: #eb5757;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+	}
+
+.mp-logo-svg {
+    fill: rgba(255, 255, 255, .6);
+	}
+
+.mp-crumb {
+    font-weight: 700;
+    line-height: 44px;
+    position: absolute;
+    top: -11px;
+    left: 2.5em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+	}
+
+.mp-home .mp-logo-svg {
+    fill: #fff;
+	}
+
+.mp-mobile {
+    line-height: 50px;
+    color: $nav-color;
+	}
+
+.mp-nav-list {
+    display: block;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+	}
+
+.mp-nav-item {
+    font-size: 0;
+    display: inline-block;
+	}
+
+.mp-nav-link {
+    font-size: 14px;
+    line-height: 44px;
+    position: relative;
+    display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
+    cursor: default;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $nav-color;
+	}
+
+.mp-nav-link:hover {
+    font-weight: bold;
+	}
+
+.mp-nav-link:after {
+    font-weight: bold;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    height: 1px;
+    margin-bottom: -1px;
+    content: attr(title);
+    text-transform: uppercase;
+    color: transparent;
+	}
+
+.current {
+    color: #fff;
+	}
+
+.mp-mobile {
+    line-height: 48px;
+    display: block;
+    cursor: default;
+    background-color: $body-color;
+	}
+
+@media (max-width: #{$mobile}) {
+    .mp-nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+
+        background-color: $body-color;
+    }
+
+    .mp-nav-list {
+        position: absolute;
+        z-index: 30;
+        top: 48px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
+
+        justify-content: stretch;
+	    }
+    .mp-nav-link {
+        display: flex;
+        overflow: hidden;
+        height: 0;
+        padding: 0;
+        transition: height .2s cubic-bezier(.465, .2, .03, 1);
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+	    }
+    .mp-made {
+        overflow-y: hidden;
+        height: 0;
+	    }
+
+    .is-open .mp-nav-item + .mp-nav-item .mp-nav-link {
+        border-top: 1px solid rgba(255, 255, 255, .6);
+	    }
+
+    .mp-nav-link:after {
+        content: '';
+	    }
+
+    .is-open .mp-nav-list {
+        height: calc(100vh - 48px);
+	    }
+
+    .is-open .mp-nav-link {
+        width: 80%;
+        height: calc(20vh - 15px);
+        margin: auto;
+	    }
+
+    .is-open .mp-made {
+        height: 25px;
+	    }
+	}
+
+@media (min-width: #{$mobile}) {
+    .mp-nav {
+        padding-bottom: 1em;
+	    }
+
+    .mp-logo {
+        top: 0;
+        left: 2em;
+        width: 80px;
+        height: 80px;
+        padding: 1.5em;
+	    }
+
+    .mp-home .mp-logo {
+        top: 2.5em;
+        left: 8em;
+        width: 80px;
+        height: 80px;
+        padding: 0.75em 1em;
+        background-color: $logo-color;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+	    }
+
+    .mp-logo-svg {
+        fill: #fff;
+	    }
+
+    .mp-crumb {
+        display: none;
+	    }
+
+    .mp-nav-list {
+        display: inline-block;
+        padding-top: 1em;
+	    }
+
+    .mp-mobile {
+        display: none;
+	    }
+
+    .mp-nav-current {
+        position: absolute;
+        bottom: 1.25em;
+        width: 0;
+        height: 0;
+        margin-left: -5px;
+        content: '';
+        transition: all .3s ease-out;
+        border-width: 0 5px 8px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+	    }
+
+    .mp-home .mp-nav-current {
+        right: 371px;
+	    }
+
+    .mp-blog .mp-nav-current {
+        right: 301px;
+	    }
+    .mp-lab .mp-nav-current {
+        right: 237px;
+	    }
+    .mp-portfolio .mp-nav-current,
+    .mp-digital .mp-nav-current,
+    .mp-interface .mp-nav-current,
+    .mp-traditional .mp-nav-current {
+        right: 150px;
+	    }
+    .mp-about .mp-nav-current {
+        right: 61px;
+	    }
+    .mp-nav .mp-made {
+        display: none;
+	    }
+	}

@@ -1,0 +1,52 @@
+---
+layout: master
+title: Labs
+exerpt: experiments with SASS, jQuery and other front end elements.
+paginate: 2
+paginate_path: "/lab/page:num"
+---
+
+<div class="mp-wrap mp-lab">
+
+    <div class="mp-pane mp-one mp-element mp-scale">
+        <div class="mp-pane-motto">
+            Blog
+        </div>
+        <p class="mp-article-text">
+            The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+        </p>
+    </div>
+
+    <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
+        <ul class="mp-article-list">
+            {% for lab in site.categories.lab %}
+            <li class="mp-article-item">
+                <a class="mp-article-link" href="{{site.baseurl}}{{ lab.url }}">
+                    <h2 class="mp-article-title">{{ lab.title }}</h2>
+                    <p class="mp-article-copy">{{ lab.exerpt }}</p>
+                    <div {% if lab.img %}class="mp-article-img " style=" background-color: #87d37c;  background-image: url('../assets/images/{{ lab.img }}');  "{% else %} class="no-image" {% endif %}>
+                        <div class="mp-article-meta">
+                            <div class="mp-article-readablity">
+                                {% assign reading_time = lab.content | strip_html | number_of_words | plus:91 | divided_by:180 %}
+                                {% if reading_time <= 1 %}
+                                  {% assign reading_time = '1' | append:' min read' %}
+                                {% else %}
+                                  {% assign reading_time = reading_time | append:' min read' %}
+                                {% endif %}
+                                <span class="mp-article-readtime">{{ reading_time }}</span>
+                            </div>
+                            <div class="mp-article-date" content="{{ article.date | date: "%Y-%m-%d" }}">{{ lab.date | date: '%B %d, %Y' }}</div>
+                        </div>
+                    </div>
+
+                </a>
+                <div class="mp-article-count"></div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="mp-post-count">
+            {{ site.categories.lab | size }} Posts
+        </div>
+    </div>
+
+</div>

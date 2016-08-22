@@ -1,0 +1,29 @@
+---
+layout: master
+title: Portfolio
+meta: Portfolio of images and illustrations by Mike Peutz
+---
+
+<div class="mp-wrap mp-traditional">
+
+    <div class="mp-pane mp-one mp-element mp-scale">
+        <div class="mp-pane-motto">
+            Traditional
+        </div>
+    </div>
+
+    <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
+        <a class="mp-back-link" href="/portfolio">Back to portfolio</a>
+        <ul class="mp-gallery">
+              {% for image in site.traditional %}
+                <li class="mp-gallery-item">
+                  <a class="mp-gallery-link" href="{{ image.url }}">
+                    <div class="mp-gallery-title">{{ image.title }}</div>
+                    <div class="mp-gallery-image" style="background-image: url('{{ image.image_path }}')"></div>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+    </div>
+
+</div>

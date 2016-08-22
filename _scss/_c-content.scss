@@ -1,0 +1,39 @@
+/* ==========================================================================
+    Content
+   ========================================================================== */
+
+.mp-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+	}
+
+.mp-wrap {
+    display: flex;
+	}
+
+.is-post.mp-content {
+    position: relative;
+    min-height: calc(100vh - 130px);
+	}
+
+@media (max-width: 1000px) {
+    .mp-content {
+        position: relative;
+        min-height: 100vh;
+	    }
+	}
+
+@media (min-width: 1000px) {
+    .mp-wrap {
+        height: 100%;
+	    }
+	}
+
+.mp-pane {
+    flex: 0 0 50%;
+	}

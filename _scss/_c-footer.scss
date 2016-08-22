@@ -1,0 +1,28 @@
+/* ==========================================================================
+    Footer
+   ========================================================================== */
+
+.mp-made {
+    font-size: .5em;
+    line-height: 2.25em;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #fff;
+	}
+
+.mp-oregon-logo {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    margin-right: .5em;
+    margin-left: .5em;
+	}
+
+@media (min-width: #{$mobile}) {
+    footer {
+        display: block;
+	    }
+	}

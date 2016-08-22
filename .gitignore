@@ -4,3 +4,4 @@ gulpfile.js
 *.sublime-project
 *.sublime-workspace
 _Site
+node_modules/**/*

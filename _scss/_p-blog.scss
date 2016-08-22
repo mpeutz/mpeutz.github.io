@@ -1,0 +1,170 @@
+/* ==========================================================================
+    Blog / Lab
+   ========================================================================== */
+
+.mp-blog .mp-one,
+.mp-lab .mp-one,
+.mp-portfolio .mp-one,
+.mp-about .mp-one {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    color: #fff;
+    background-color: $body-color;
+    background-image: url('../assets/images/abstract II.png');
+    background-size: cover;
+	}
+
+.mp-lab .mp-one {
+    background-image: url('../assets/images/Piggy.png');
+	}
+
+.mp-blog .mp-one .mp-pane-motto,
+.mp-lab .mp-one .mp-pane-motto,
+.mp-about .mp-one .mp-pane-motto,
+.mp-portfolio .mp-one .mp-pane-motto {
+    display: block;
+    margin-top: 48px;
+    border-bottom: 2px solid  #fff;
+	}
+
+.mp-blog .mp-two,
+.mp-lab .mp-two,
+.mp-portfolio .mp-two {
+    position: relative;
+
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%;
+	}
+
+.mp-article-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: articles;
+	}
+
+.mp-article-item {
+    max-width: 75%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+	}
+
+.mp-article-count {
+    display: block;
+    width: 100%;
+    margin-top: 5em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+	}
+
+.mp-article-count:after {
+    font-family: 'Futura', sans-serif;
+    line-height: 24px;
+    position: relative;
+    top: 14px;
+    display: inline-block;
+    width: 24px;
+    content: counter(articles) ;
+    counter-increment: articles;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ccc;
+	}
+
+.mp-article-link {
+    text-decoration: none;
+    color: $text-color;
+	}
+
+.mp-article-title {
+    font-family: 'Futura', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+	}
+
+.mp-article-copy {
+    font-family: 'Georgia', serif;
+	}
+
+.mp-article-img {
+    height: 120px;
+    transition: height .5s ease-out;
+    background-position: 50%;
+    background-size: cover;
+	}
+
+.mp-transitioning .mp-article-meta {
+    opacity: 0;
+	}
+
+.mp-article-meta,
+.mp-post-meta {
+    font-family: 'Futura', sans-serif;
+    font-size: 12px;
+    display: flex;
+    max-width: $col;
+    margin: auto;
+    padding: .75em;
+    text-transform: uppercase;
+
+    justify-content: space-between;
+    align-items: center;
+    .no-image & {
+        padding: 0;
+        opacity: .6;
+    }
+	}
+
+.mp-article-readablity,
+.mp-article-date {
+    color: #fff;
+    .no-image & {
+        color: $text-color;
+	    }
+	}
+
+.mp-post-count {
+    font-family: 'Futura', sans-serif;
+    line-height: 24px;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: absolute;
+    bottom: 2em;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, .3);
+	}
+
+
+@media (min-width: #{$break}) {
+    .mp-blog .mp-two,
+    .mp-lab .mp-two {
+        height: 100%;
+	    }
+	}
+
+@media (max-width: #{$break}) {
+    .mp-blog .mp-two,
+    .mp-lab .mp-two {
+        flex: 1 0 auto;
+	    }
+    .mp-post-meta,
+    .mp-post-content,
+    .mp-source,
+    .mp-share,
+    .mp-author {
+        padding-right: 1em;
+        padding-left: 1em;
+	    }
+	}
+@media (max-width: #{$mobile}) {
+    .mp-post-header {
+        margin-top: 48px;
+	    }
+	}

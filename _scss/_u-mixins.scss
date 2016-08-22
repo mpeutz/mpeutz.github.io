@@ -1,0 +1,19 @@
+// ==========================================================================
+//    Mixins
+//   ==========================================================================/ /
+
+// Responsive Number mixin
+@mixin responsiveNum ($property: font-size, $minSize: 16px, $maxSize: 28px, $minWidth: 420px, $maxWidth: 1280px) {
+    $sizeSpan: ($maxSize - $minSize) / ($maxSize * 0 + 1);
+    $widthSpan: ($maxWidth - $minWidth) / ($minWidth * 0 + 1);
+
+    #{$property}: calc( #{$minSize} + #{$sizeSpan} * ((100vw - #{$minWidth}) / #{$widthSpan}));
+
+    @media screen and (max-width: $minWidth ){
+        #{$property}: $minSize;
+	    }
+
+    @media screen and (min-width: $maxWidth ){
+        #{$property}: $maxSize;
+	    }
+	}
