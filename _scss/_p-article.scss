@@ -23,6 +23,7 @@
     opacity: .8;
     background-position: 50%;
     background-size: cover;
+    //background-attachment: fixed;
 	}
 
 .mp-post-image:after {
@@ -49,11 +50,14 @@
     @include responsiveNum(font-size, 22px, 48px);
 	}
 
-.mp-post-category {
+.mp-post-tags {
+    margin-top: 1.5em;
+	}
+
+.mp-post-tag {
     font-size: 12px;
     position: relative;
     z-index: 15;
-    margin-top: 1.5em;
     padding: .25em .75em;
     text-transform: uppercase;
     color: #fff;

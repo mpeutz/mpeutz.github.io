@@ -7,6 +7,9 @@ source: http://theportalwiki.com/wiki/Cave_Johnson_voice_lines
 img: lionstooth.png
 imgTitle: lions tooth
 category: blog
+tags:
+  - tag: blog
+  - tag: aperture
 ---
 
 <p>If you’re not a fan of the cartilage in your body, you are gonna love what this next test might do for you. Honestly, cartilage is like adenoids, or a second kidney. Body doesn’t want it, you don’t need it. Good riddance.</p>

@@ -7,6 +7,10 @@ exerpt: All right. We're working on a little teleportation experiment. Now, this
 img: dreams.png
 imgTitle: dreams
 category: blog
+tags:
+  - tag: one
+  - tag: two
+  - tag: three
 ---
 
 Paragraphs are separated by a blank line.

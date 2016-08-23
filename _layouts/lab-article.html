@@ -9,9 +9,13 @@ layout: master
 
             <div class="mp-post-image" style="background-color: #555; {% if page.img %}background-image: url('../../assets/images/{{ page.img }}'); {% else %} background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%); {% endif %}">{{asset-path}}</div>
                 <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
-                <div class="mp-post-category">
-                    {{page.category}}
+                {% if page.tags %}
+                <div class="mp-post-tags">
+                    {% for tag in page.tags %}
+                    <span  class="mp-post-tag">{{tag.tag}}</span>
+                    {% endfor %}
                 </div>
+                {% endif %}
         </div>
 
         <div class="mp-post-meta">

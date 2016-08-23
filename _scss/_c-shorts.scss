@@ -17,6 +17,10 @@
     background-size: cover;
 	}
 
+.mp-post-img:hover {
+    will-change: left, right, top, bottom, height, width;
+}
+
 .mp-post-caption {
     font-family: 'georgia', serif;
     font-size: .85em;
@@ -92,6 +96,7 @@ blockquote p {
 
 .mp-post-content hr,
 .mp-hr {
-    border-top: 4px double #8b929d;
+    border: none;
+    border-top: 1px single #8b929d;
     margin-bottom: 1.5em;
 }
