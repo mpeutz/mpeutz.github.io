@@ -2,6 +2,9 @@
 layout: master
 title: Portfolio
 meta: Portfolio of images and illustrations by Mike Peutz
+digitalImg: /assets/images/apple.png
+interfaceImg: /assets/images/belles.png
+traditionalImg: /assets/images/tradish.jpg
 ---
 
 <div class="mp-wrap mp-portfolio">
@@ -10,35 +13,27 @@ meta: Portfolio of images and illustrations by Mike Peutz
         <div class="mp-pane-motto">
             Portfolio
         </div>
+        <p class="mp-pane-text">
+            The average human male is about sixty percent water.
+        </p>
     </div>
 
-    <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
+    <div class="mp-pane mp-two mp-scroller">
         <ul class="mp-gallery">
-                <li class="mp-gallery-item">
-                  <a class="mp-gallery-link" href="/digital">
-                    <div class="mp-gallery-title">digital</div>
-                    <div class="mp-gallery-image" style="background-image: url('/assets/images/apple.png')"></div>
-                    <p>
-                        Gallery of digital created images. Most of these where created with the awesome Aviary "peacock" applications. The rest are created using a variety of other applications with include but not exclusivly Adobe illustrator, Inkscape, Gimp, and Photoshop.
-                    </p>
-                  </a>
-                </li>
-                <li class="mp-gallery-item">
-                  <a class="mp-gallery-link" href="/interface">
-                    <div class="mp-gallery-title">interface</div>
-                    <div class="mp-gallery-image" style="background-image: url('/assets/images/belles.png')"></div>
-                    <p>
-                        Here are some of my UI/UX realated projects.
-                    </p>
-                  </a>
-                </li>
-                <li class="mp-gallery-item">
-                  <a class="mp-gallery-link" href="/traditional">
-                    <div class="mp-gallery-title">traditional</div>
-                    <div class="mp-gallery-image" style="background-image: url('/assets/images/tradish.jpg')"></div>
-                  </a>
-                </li>
-            </ul>
-    </div>
+            {% for item in site.galleries %} {% assign cat = item.category %}
+            <li class="mp-gallery-item mp-element mp-slideInRight mp-delay-{{ forloop.index }}">
 
+                <a class="mp-gallery-link" href="/{{item.category}}">
+                    <div class="mp-gallery-title">{{item.title}}</div>
+                    <div class="mp-gallery-image" style="background-image: url({{site.baseurl}}{{item.image}})">
+                        <div class="mp-gallery-count">
+                            {{ site[cat] | size }} Images
+                        </div>
+                    </div>
+                    {{ item.content }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>

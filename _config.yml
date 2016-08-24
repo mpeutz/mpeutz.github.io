@@ -24,9 +24,13 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
 collections:
+  galleries:
   digital:
     output: true
+    permalink: /digital/:path/
   interface:
     output: true
+    permalink: /interface/:path/
   traditional:
     output: true
+    permalink: /traditional/:path/

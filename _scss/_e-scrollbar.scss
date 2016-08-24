@@ -6,8 +6,8 @@
 .ps-container {
     overflow: hidden !important;
 
-    -ms-touch-action: none;
-        touch-action: none;
+    // -ms-touch-action: none;
+    //     touch-action: none;
     -ms-overflow-style: none;
 	}
 @supports (-ms-overflow-style: none) {

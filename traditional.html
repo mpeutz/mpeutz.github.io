@@ -1,15 +1,19 @@
 ---
 layout: master
-title: Portfolio
-meta: Portfolio of images and illustrations by Mike Peutz
+title: Traditional
+meta: Traditional artwork by Mike Peutz
 ---
 
 <div class="mp-wrap mp-traditional">
 
-    <div class="mp-pane mp-one mp-element mp-scale">
+    {% assign trad = site.galleries | where:"category", "traditional"  | first %}
+    <div class="mp-pane mp-one mp-element mp-scale" style="background-image: url({{site.baseurl}}{{ trad.image}})">
         <div class="mp-pane-motto">
-            Traditional
+            {{ trad.title }}
         </div>
+        <p class="mp-pane-text">
+            {{ trad.content | remove: '<p>' | remove: '</p>'}}
+        </p>
     </div>
 
     <div class="mp-pane mp-two mp-element mp-scale mp-scroller">

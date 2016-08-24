@@ -1,19 +1,23 @@
 ---
 layout: master
-title: Portfolio
-meta: Portfolio of images and illustrations by Mike Peutz
+title: Interfaces
+meta: User interfaces by Mike Peutz
 ---
 
 <div class="mp-wrap mp-interface">
 
-    <div class="mp-pane mp-one mp-element mp-scale">
+    {% assign inter = site.galleries | where:"category", "interface"  | first %}
+    <div class="mp-pane mp-one mp-element mp-scale" style="background-image: url({{site.baseurl}}{{ inter.image}})">
         <div class="mp-pane-motto">
-            {{ page.collection }}
+            {{ inter.title }}
         </div>
+        <p class="mp-pane-text">
+            {{ inter.content | remove: '<p>' | remove: '</p>'}}
+        </p>
     </div>
 
     <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
-        <a class="mp-back-link" href="/portfolio">Back to {{ page.collection }}</a>
+        <a class="mp-back-link" href="/portfolio">Back to portfolio</a>
         <ul class="mp-gallery">
               {% for image in site.interface %}
                 <li class="mp-gallery-item">

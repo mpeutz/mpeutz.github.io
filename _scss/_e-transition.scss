@@ -5,9 +5,9 @@
 
 .mp-scene {
     .mp-element,
-    [class^='mp-element-'] {
-        animation-timing-function: ease-out;
+    .mp-elem {
         animation-duration: .5s;
+        animation-timing-function: ease-out;
 
         animation-fill-mode: both;
         will-change: transform;
@@ -17,37 +17,72 @@
         animation-name: scale;
 	    }
 
-    .mp-fade {
+    .mp-fade,
+    .mp-enter-fade {
         animation-name: fade;
 	    }
 
     .mp-one.mp-scale {
         animation-name: slideLeft;
-        animation-timing-function: cubic-bezier(0.68, -0.25, 0.265, 1.25);
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
 	    }
 
     .mp-two.mp-scale {
         animation-name: slideRight;
-        animation-timing-function: cubic-bezier(0.68, -0.25, 0.265, 1.25);
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
 	    }
 
-    &.is-exiting .mp-element {
+    .mp-slideUp,
+    &.is-exiting .mp-exit-slideUp {
+        animation-name: slideUp;
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+	    }
+
+        .mp-slideInRight {
+            animation-name: slideInRight;
+            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+    	    }
+
+    .mp-enter-fade {
+        animation-name: fade;
+	    }
+
+    .mp-slideDown {
+        animation-name: slideDown;
+	    }
+
+    .mp-two .mp-element {
+        animation-delay: .4s;
+	    }
+
+    &.is-exiting .mp-element,
+    &.is-exiting .mp-exit-slideUp {
         animation-direction: alternate-reverse;
 	    }
 
-    &:not(.is-exiting) .mp-two {
-        //animation-delay: .2s;
-	    }
+        .mp-two .mp-delay-1 {
+            animation-delay: .4s;
+            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        }
+
+        .mp-two .mp-delay-2 {
+            animation-delay: .6s;
+            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        }
+
+        .mp-two .mp-delay-3 {
+            animation-delay: .8s;
+            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        }
 	}
+
 
 @keyframes scale {
     0% {
-        //transform: scale(0);
         transform: translate3d(100%, 0, 0);
 	    }
     100% {
         transform: none;
-        //transform: scale(100%);
 	    }
 	}
 
@@ -55,22 +90,29 @@
 @keyframes fade {
     0% {
         opacity: 0;
-        //clip-path: circle(0% at 50% 50%);
 	    }
     100% {
         opacity: 1;
-        //clip-path: circle(150% at 50% 50%);
 	    }
 	}
 
-@keyframes slideRight {
+@keyframes slideUp {
     0% {
-        transform: translate3d(0, 100%, 0);
-        //opacity: 0;
+        transform: translate3d(0, -100%, 0);
 	    }
     100% {
         transform: none;
-        //opacity: 1;
+	    }
+	}
+
+@keyframes slideDown {
+    0% {
+        transform: translate3d(0, 10%, 0);
+        opacity: 0;
+	    }
+    100% {
+        transform: none;
+        opacity: 1;
 	    }
 	}
 
@@ -91,3 +133,14 @@
         transform: none;
 	    }
 	}
+
+    @keyframes slideInRight {
+        0% {
+            transform: translate3d(130%, 0, 0);
+            opacity: 0;
+    	    }
+        100% {
+            transform: none;
+            opacity: 1;
+    	    }
+    	}

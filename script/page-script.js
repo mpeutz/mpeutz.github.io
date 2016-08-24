@@ -38,7 +38,6 @@
         $(".mp-nav-link").each(function(index) {
             if (pathname.indexOf($(this).text().toLowerCase()) != -1) {
                 var offset = $(this).offset();
-                // $('.mp-nav-current').animate({'left': offset.left + ($(this).outerWidth() / 2)}, 500);
                 $(this).addClass("current");
             } else if(pathname == "/digital" || pathname == "/interface" || pathname == "/traditional") {
                 $('#mp-portfolio').addClass("current");
@@ -47,8 +46,6 @@
 
         if ($(".mp-nav-link.current").length === 0) {
             var idx = $("#index");
-            // var offset = idx.offset();
-            // $('.mp-nav-current').animate({'left': offset.left + (idx.outerWidth() / 2)}, 500);
             idx.addClass("current");
         }
 
@@ -58,7 +55,15 @@
     }
 
     $(function() {
-        $('.mp-scroller, .highlight').perfectScrollbar();
+        var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
+
+        if ( !is_mobile ) {
+          $('.mp-scroller, .highlight').perfectScrollbar();
+      } else {
+          $('#body').addClass('is-mobile');
+          var h = $('.is-open .mp-nav-list').height() - 48;
+          $('.is-open .mp-nav-list').height(h);
+      }
     });
 
     $('#body').on('click', '.mp-mobile', function() {
@@ -102,6 +107,12 @@
                 'width': '100%',
                 'height': '100%'
             }, 500);
+            // hammertime.get('swipe').set({ enable: true });
+            // hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+            // hammertime.on('swipe', function(ev) {
+            // 	expandImage.collapse();
+            //     hammertime.get('swipe').set({ enable: false });
+            // });
         },
         collapse: function() {
             var img = $('.is-expanded');
@@ -115,6 +126,15 @@
             });
         }
     };
+
+    $(window).smartresize(function() {
+
+    })
+
+    // var myElement = document.getElementById('body');
+    // var hammertime = new Hammer(myElement);
+
+
 
     $(document).on("scroll", function(e) {
         if ($(document).scrollTop() > 413) {
@@ -138,30 +158,41 @@
     //
     // }
 
-
     var options = {
             prefetch: true,
             cacheLength: 2,
-            scroll: false,
+            scroll: true,
             onBefore: function($currentTarget) {
                 if ($currentTarget.hasClass('mp-article-link') && $currentTarget.find('.mp-article-img').length == 1) {
+                    $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
                     var item = $currentTarget.find('.mp-article-img'),
                         bounds = item[0].getBoundingClientRect(),
+                        box = $('.mp-content ')[0].getBoundingClientRect(),
                         clone = item.clone().appendTo('.mp-content');
-                        console.log(bounds);
                     clone.css({
-                        'position': 'absolute',
-                        'top': bounds.top - 100,
-                        'left': bounds.left - 50,
+                        'position': 'fixed',
+                        'top': bounds.top,
+                        'left': bounds.left,
                         'width': bounds.width,
                         'height': '120px'
                     }).addClass('mp-transitioning');
-                    clone.animate({
-                        'left': 0,
-                        'top': (0 + $(document).scrollTop()),
-                        'width': '100%',
-                        'height': '400px'
-                    }, 500);
+                    if ($(window).innerWidth() > 1000) {
+                        clone.animate({
+                            'left': box.left,
+                            'top': box.top,
+                            'width': box.width,
+                            'height': '250px',
+                            'opacity': '.7'
+                        }, 600);
+                    } else {
+                        clone.animate({
+                            'left': 0,
+                            'top': '48px',
+                            'width': '100%',
+                            'height': '250px',
+                            'opacity': '.7'
+                        }, 600);
+                    }
                 }
             },
             onStart: {
@@ -180,9 +211,10 @@
                 duration: 0,
                 render: function($container, $newContent) {
                     $container.removeClass('is-exiting');
-
                     $container.html($newContent);
-                    $('.mp-scroller').perfectScrollbar();
+                    if ($(window).innerWidth() >= 1000) {
+                        $('.mp-scroller').perfectScrollbar();
+                    }
                     checkNav();
                     //boundless();
                 }

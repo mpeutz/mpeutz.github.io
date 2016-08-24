@@ -27,7 +27,7 @@ paginate_path: "/blog/page:num"
                     <h2 class="mp-article-title">{{ article.title }}</h2>
                     <p class="mp-article-copy">{{ article.exerpt }}</p>
                     {% if article.img %}
-                    <div class="mp-article-img" style=" background-color: #87d37c;  background-image: url('../assets/images/{{ article.img }}');">
+                    <div class="mp-article-img" style=" background-color: #87d37c;  background-image: url('{{site.baseurl}}/assets/images/{{ article.img }}');">
                         <div class="mp-article-meta">
                             <div class="mp-article-readablity">
                                 {% assign reading_time = article.content | strip_html | number_of_words | plus:91 | divided_by:180 %}

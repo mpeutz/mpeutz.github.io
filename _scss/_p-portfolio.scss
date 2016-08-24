@@ -2,22 +2,53 @@
     Portfolio
    ========================================================================== */
 
-.mp-portfolio .mp-one {
+.mp-portfolio .mp-one,
+.mp-digital .mp-one,
+.mp-interface .mp-one,
+.mp-traditional .mp-one {
     background-image: url('../assets/images/dreams.png');
+    & .mp-pane-motto {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+
+    }
+    & .mp-pane-motto {
+        display: block;
+        color: #fff;
+    }
 }
 
+.mp-pane-text {
+    width: 60%;
+    max-width: 440px;
+    //margin-top: 4em;
+    @include responsiveNum('margin-top', 2em, 4em);
+    text-align: center;
+    color: #fff;
+}
+
+
 .mp-gallery {
-    max-width: 75%;
     width: 100%;
-    list-style-type: none;
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
+    list-style-type: none;
+}
+
+.mp-gallery-item {
     position: relative;
+    max-width: 75%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .mp-gallery-link {
     text-decoration: none;
     color:$text-color;
+    p {
+        padding-top: 2em;
+    }
 }
 
 .mp-gallery-image {

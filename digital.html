@@ -1,15 +1,19 @@
 ---
 layout: master
-title: Portfolio
-meta: Portfolio of images and illustrations by Mike Peutz
+title: Digital
+meta: Digital images by Mike Peutz
 ---
 
 <div class="mp-wrap mp-digital">
 
-    <div class="mp-pane mp-one mp-element mp-scale">
+    {% assign digi = site.galleries | where:"category", "digital"  | first %}
+    <div class="mp-pane mp-one mp-element mp-scale" style="background-image: url({{site.baseurl}}{{ digi.image}})">
         <div class="mp-pane-motto">
-            Digital
+            {{ digi.title }}
         </div>
+        <p class="mp-pane-text">
+            {{ digi.content | remove: '<p>' | remove: '</p>'}}
+        </p>
     </div>
 
     <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
