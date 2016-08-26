@@ -117,7 +117,6 @@
         expandImage.collapse();
     });
 
-
     const expandImage = {
         expand: function(elem) {
             var item   = elem.find('.mp-post-img'),
@@ -179,7 +178,6 @@
             $("#body").removeClass("fix-back");
         }
     });
-
 
     checkNav();
 
