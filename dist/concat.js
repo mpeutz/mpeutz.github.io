@@ -69,6 +69,7 @@
             idx.addClass("current");
         }
 
+
         $('#body').attr('class', '');
         $('#body').addClass($('.mp-page').attr('data-page'));
 
@@ -110,6 +111,7 @@
 
     function init(){
         checkMobile();
+        checkNav();
         progImg();
     }
 
@@ -253,7 +255,6 @@
                 duration: 500,
                 render: function($container) {
                     $container.addClass('is-exiting');
-
                     smoothState.restartCSSAnimations();
 
                 }
