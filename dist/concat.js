@@ -92,20 +92,31 @@
 
     function progImg() {
         $('.mp-img-loader').each(function() {
+
+            function cached(url) {
+                var test = document.createElement("img");
+                test.src = url;
+                return test.complete || test.width + test.height > 0;
+            }
+
             var image = $(this).attr('data-src'),
-                elem  = $(this),
-                img   = $('<img />');
+                elem = $(this),
+                img = $('<img />');
 
-            img.attr('src', image);
+            if (cached(image)) {
+                elem.css('background-image', 'url(' + image + ')').addClass('img-cached');
+            } else {
 
-            img.on('load', function() {
-                if ($('html').hasClass('is-mobile') ) {
-                    elem.css('background-image', 'url(' + image.replace(/([.])\w+/, '-sm.jpg') + ')').addClass('img-loaded');
-                } else {
-                    elem.css('background-image', 'url(' + image + ')').addClass('img-loaded');
+                img.attr('src', image);
 
-                }
-            });
+                img.on('load', function() {
+                    if ($('html').hasClass('is-mobile')) {
+                        elem.css('background-image', 'url(' + image.replace(/([.])\w+/, '-sm.jpg') + ')').addClass('img-loaded');
+                    } else {
+                        elem.css('background-image', 'url(' + image + ')').addClass('img-loaded');
+                    }
+                });
+            }
         });
     }
 
