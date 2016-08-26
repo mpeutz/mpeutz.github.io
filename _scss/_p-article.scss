@@ -14,7 +14,7 @@
     align-items: center;
 	}
 
-.mp-post-image {
+.mp-post .mp-post-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -33,7 +33,7 @@
     width: 100%;
     height: 100%;
     content: '';
-    opacity: .4;
+    opacity: .9;
     background-color: #333;
 	}
 
@@ -136,6 +136,24 @@
 .mp-source a:link {
     //color: $text-color;
 	}
+
+    .mp-post-navigation {
+      font-size: 14px;
+      display: block;
+      width: auto;
+      overflow: hidden;
+    }
+
+    .mp-post-navigation a {
+      display: block;
+      width: 50%;
+      float: left;
+      margin: 1em 0;
+    }
+
+    .mp-post-navigation .next {
+      text-align: right;
+    }
 
 .mp-author {
     margin: 2em auto 0;

@@ -1,0 +1,25 @@
+/* ==========================================================================
+    Images (data-uri)
+   ========================================================================== */
+
+.mp-img-loader {
+    position: relative;
+}
+
+.mp-img-loader,
+.mp-img-loader:before {
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    transition: opacity 2s ease-out;
+    z-index: 5;
+	}
+
+.mp-img-loader:before {
+    z-index: 15;
+}
+
+.img-loaded.mp-img-loader:before {
+    opacity: 0;
+	}

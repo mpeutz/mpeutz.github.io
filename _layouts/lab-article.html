@@ -6,7 +6,7 @@ layout: master
 
     <div class="">
     <div class="mp-post-header mp-elem mp-exit-slideUp">
-        <div class="mp-post-image" style="background-color: #555; {% if page.img %}background-image: url('{{site.baseurl}}/assets/images/{{ page.img }}'); {% else %} background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%); {% endif %}">{{asset-path}}</div>
+        <div class="mp-post-image mp-img-loader" {% if page.img %} data-src='{{site.baseurl}}/assets/images/{{ page.img }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
             <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
             {% if page.tags %}
             <div class="mp-post-tags">
@@ -36,6 +36,32 @@ layout: master
 
         {{content}}
         {% if page.source %}<div class="mp-source">Source: <a href="{{page.source}}">{{page.source}}</a></div>{% endif %}
+
+
+        <div class="mp-post-navigation">
+            {% for post in site.categories.lab %}
+            {% if post.url == page.url %}
+                {% assign post_index0 = forloop.index0 %}
+                {% assign post_index1 = forloop.index %}
+            {% endif %}
+            {% endfor %}
+            {% for post in site.categories.lab %}
+                {% if post_index0 == forloop.index %}
+                    {% assign next_post = post.url %}
+                    {% assign next_title = post.title %}
+                {% endif %}
+                {% if post_index1 == forloop.index0 %}
+                    {% assign prev_post = post.url %}
+                    {% assign prev_title = post.title %}
+                {% endif %}
+            {% endfor %}
+            {% if prev_post %}
+            <a  class="mp-PREV" href="{{ prev_post }}">{{prev_title}}</a> <br>
+            {% endif %}
+            {% if next_post %}
+                <a  class="mp-next" href="{{ next_post }}">{{next_title}}</a> <br>
+            {% endif %}
+        </div>
     </div>
 
         {% include share.html %}

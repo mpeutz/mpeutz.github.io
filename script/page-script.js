@@ -39,7 +39,7 @@
             if (pathname.indexOf($(this).text().toLowerCase()) != -1) {
                 var offset = $(this).offset();
                 $(this).addClass("current");
-            } else if(pathname == "/digital" || pathname == "/interface" || pathname == "/traditional") {
+            } else if (pathname == "/digital" || pathname == "/interface" || pathname == "/traditional") {
                 $('#mp-portfolio').addClass("current");
             }
         });
@@ -54,16 +54,52 @@
 
     }
 
-    $(function() {
-        var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
+    function checkMobile() {
+        var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false),
+            is_small = ($(window).innerWidth() < 1000 ? true : false );
 
-        if ( !is_mobile ) {
-          $('.mp-scroller, .highlight').perfectScrollbar();
-      } else {
-          $('#body').addClass('is-mobile');
-          var h = $('.is-open .mp-nav-list').height() - 48;
-          $('.is-open .mp-nav-list').height(h);
-      }
+        if (!is_mobile && !is_small) {
+            $('html').removeClass('is-mobile');
+            $('.mp-scroller, .highlight').perfectScrollbar();
+            console.log('you are not the mobile!');
+        } else {
+            $('html').addClass('is-mobile');
+            console.log('is mobile');
+        }
+
+    }
+
+    function progImg() {
+        $('.mp-img-loader').each(function() {
+            var image = $(this).attr('data-src'),
+                elem  = $(this),
+                img   = $('<img />');
+
+            img.attr('src', image);
+
+            img.on('load', function() {
+                if ($('html').hasClass('is-mobile') ) {
+                    elem.css('background-image', 'url(' + image.replace(/([.])\w+/, '-sm.jpg') + ')').addClass('img-loaded');
+                } else {
+                    elem.css('background-image', 'url(' + image + ')').addClass('img-loaded');
+
+                }
+            });
+        });
+    }
+
+    function init(){
+        checkMobile();
+        progImg();
+    }
+
+    $(function() {
+        init();
+    });
+
+    $(window).smartresize(function() {
+        console.log('resized');
+        init();
     });
 
     $('#body').on('click', '.mp-mobile', function() {
@@ -84,10 +120,10 @@
 
     const expandImage = {
         expand: function(elem) {
-            var item = elem.find('.mp-post-img'),
-                cap = elem.find('.mp-post-caption').clone().addClass('caption-expanded'),
+            var item   = elem.find('.mp-post-img'),
+                cap    = elem.find('.mp-post-caption').clone().addClass('caption-expanded'),
                 bounds = item[0].getBoundingClientRect(),
-                clone = item.clone().appendTo('.mp-content').addClass('is-expanded');
+                clone  = item.clone().appendTo('.mp-content').addClass('is-expanded');
 
             if (cap !== undefined) {
                 $(cap).appendTo(clone);
@@ -165,10 +201,10 @@
             onBefore: function($currentTarget) {
                 if ($currentTarget.hasClass('mp-article-link') && $currentTarget.find('.mp-article-img').length == 1) {
                     $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
-                    var item = $currentTarget.find('.mp-article-img'),
+                    var item   = $currentTarget.find('.mp-article-img'),
                         bounds = item[0].getBoundingClientRect(),
-                        box = $('.mp-content ')[0].getBoundingClientRect(),
-                        clone = item.clone().appendTo('.mp-content');
+                        box    = $('.mp-content ')[0].getBoundingClientRect(),
+                        clone  = item.clone().appendTo('.mp-content');
                     clone.css({
                         'position': 'fixed',
                         'top': bounds.top,
@@ -199,8 +235,6 @@
                 duration: 500,
                 render: function($container) {
                     $container.addClass('is-exiting');
-                    //boundless();
-                    checkNav();
 
                     smoothState.restartCSSAnimations();
 
@@ -215,9 +249,10 @@
                     if ($(window).innerWidth() >= 1000) {
                         $('.mp-scroller').perfectScrollbar();
                     }
-                    checkNav();
-                    //boundless();
                 }
+            },
+            onAfter: function($container, $newContent) {
+                init();
             }
         },
         smoothState = $('#main').smoothState(options).data('smoothState');
