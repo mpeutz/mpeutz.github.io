@@ -33,12 +33,21 @@
         opacity: .5;
     }
 
+    .mp-img-loader:before {
+        -webkit-filter: blur(6px);
+        filter: blur(6px);
+        overflow: hidden;
+    }
+
     @supports (mix-blend-mode: soft-light) {
         .mp-img-loader:after {
             background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
 
             mix-blend-mode: hard-light;
     	    }
+        .mp-post-content .mp-img-loader:after {
+            background: none;
+            }
     	}
 
 .mp-home .mp-one:before {

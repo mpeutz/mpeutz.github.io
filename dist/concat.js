@@ -127,6 +127,7 @@
     }
 
     $(function() {
+        $('html').removeClass('no-js');
         init();
     });
 

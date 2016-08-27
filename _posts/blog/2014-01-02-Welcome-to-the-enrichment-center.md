@@ -16,7 +16,7 @@ tags:
 Now, if you're part of Control Group Kepler-Seven, we implanted a tiny microchip about the size of a postcard into your skull. Most likely you've forgotten it's even there, but if it starts vibrating and beeping during this next test, let us know, because that means it's about to hit five hundred degrees, so we're gonna need to go ahead and get that out of you pretty fast.
 
 <figure class="mp-post-figure">
-  <div class="mp-post-img" style="background-image:url('../../assets/images/belles.png')" alt="Ms. Cute la Belles"></div>
+  <div class="mp-post-img mp-img-loader" data-src="{{ site.baseurl }}/assets/images/belles.png" alt="Ms. Cute la Belles"></div>
   <figcaption class="mp-post-caption">A cheeky Belles - <a href="https://www.flickr.com/photos/29127438@N02/"  target="_blank" >Isabelle Q. Peutz</a></figcaption>
 </figure>
 

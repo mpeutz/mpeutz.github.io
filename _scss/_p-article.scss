@@ -133,27 +133,19 @@
     text-align: center;
 	}
 
-.mp-source a:link {
-    //color: $text-color;
-	}
 
-    .mp-post-navigation {
-      font-size: 14px;
-      display: block;
-      width: auto;
-      overflow: hidden;
+
+.mp-post-navigation {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     }
 
     .mp-post-navigation a {
-      display: block;
-      width: 50%;
-      float: left;
-      margin: 1em 0;
+      flex: 0 0 25%;
     }
 
-    .mp-post-navigation .next {
-      text-align: right;
-    }
 
 .mp-author {
     margin: 2em auto 0;
