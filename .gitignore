@@ -3,5 +3,6 @@ gulpfile.js
 *.sassc
 *.sublime-project
 *.sublime-workspace
+*.log
 _Site
 node_modules/**/*
