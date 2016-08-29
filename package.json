@@ -1,12 +1,12 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "peutzdesign.com",
+  "version": "0.1.0",
+  "description": "Personal site for Mike Peutz",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Mike Peutz",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "~2.8.0",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/mpeutz/mpeutz.github.io.git"
   },
   "keywords": [
     "jekyll",
@@ -31,7 +31,7 @@
     "browsersync"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/mpeutz/mpeutz.github.io/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/mpeutz/mpeutz.github.io"
 }

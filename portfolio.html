@@ -9,7 +9,7 @@ traditionalImg: /assets/images/tradish.jpg
 
 <div class="mp-wrap mp-portfolio">
 
-    <div class="mp-pane mp-one mp-element mp-scale">
+    <div class="mp-pane mp-one mp-element mp-scale mp-img-loader" data-src="{{ site.baseurl }}/assets/images/dreams.png">
         <div class="mp-pane-motto">
             Portfolio
         </div>
@@ -21,12 +21,12 @@ traditionalImg: /assets/images/tradish.jpg
     <div class="mp-pane mp-two mp-scroller">
         <ul class="mp-gallery">
             {% for item in site.galleries %} {% assign cat = item.category %}
-            <li class="mp-gallery-item mp-element mp-slideInRight mp-delay-{{ forloop.index }}">
+            <li class="mp-portfolio-item mp-element mp-slideInRight mp-delay-{{ forloop.index }}">
 
-                <a class="mp-gallery-link" href="/{{item.category}}">
-                    <div class="mp-gallery-title">{{item.title}}</div>
-                    <div class="mp-gallery-image" style="background-image: url({{site.baseurl}}{{item.image}})">
-                        <div class="mp-gallery-count">
+                <a class="mp-portfolio-link" href="/{{item.category}}">
+                    <div class="mp-portfolio-title">{{item.title}}</div>
+                    <div class="mp-portfolio-image" style="background-image: url({{site.baseurl}}{{item.image}})">
+                        <div class="mp-portfolio-count">
                             {{ site[cat] | size }} Images
                         </div>
                     </div>

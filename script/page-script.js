@@ -3,7 +3,6 @@
     'use strict';
 
     var deBouncer = function($, cf, of, interval) {
-        // http://www.hnldesign.nl/work/code/debouncing-events-with-jquery/
         var debounce = function(func, threshold, execAsap) {
             var timeout;
             return function debounced() {
@@ -33,6 +32,16 @@
     deBouncer(jQuery, 'touchpause', 'touchmove', 100);
 
 
+
+
+    //==========================================================================
+    //
+    //      checkNav()
+    //
+    //      Checks the page and sets navigation marker in nav and class on body.
+    //
+    //==========================================================================
+
     function checkNav() {
         var pathname = window.location.pathname.replace(/\\/g, "");
         $(".mp-nav-link").each(function(index) {
@@ -44,16 +53,29 @@
             }
         });
 
+        // Sets navigation marker (positioned with css)
         if ($(".mp-nav-link.current").length === 0) {
             var idx = $("#index");
             idx.addClass("current");
         }
 
-
+        // Sets 'page' class on the body element
         $('#body').attr('class', '');
         $('#body').addClass($('.mp-page').attr('data-page'));
-
     }
+
+
+
+
+    //==========================================================================
+    //
+    //      checkMobile()
+    //
+    //      Sniffs if the site is being accessed on a mobile device.
+    //      If mobile sets 'is-mobile' class on html and does not initalize the
+    //      perfectScrollbar plugin.
+    //
+    //==========================================================================
 
     function checkMobile() {
         var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false),
@@ -62,17 +84,25 @@
         if (!is_mobile && !is_small) {
             $('html').removeClass('is-mobile');
             $('.mp-scroller, .highlight').perfectScrollbar();
-            console.log('you are not the mobile!');
         } else {
             $('html').addClass('is-mobile');
-            console.log('is mobile');
         }
-
     }
+
+
+
+    //==========================================================================
+    //
+    //      progImg()
+    //
+    //      Homebrew progressive image loader.
+    //
+    //==========================================================================
 
     function progImg() {
         $('.mp-img-loader').each(function() {
 
+            // Checks if image is cached
             function cached(url) {
                 var test = document.createElement("img");
                 test.src = url;
@@ -83,13 +113,16 @@
                 elem = $(this),
                 img = $('<img />');
 
+
+            // if image is cached show large version immedatly. if not show
+            // low-res image and load large one in hidden div. Once large version
+            // is fully loaded fade it in.
             if (cached(image)) {
                 elem.css('background-image', 'url(' + image + ')').addClass('img-cached');
             } else {
-
                 img.attr('src', image);
-
                 img.on('load', function() {
+
                     if ($('html').hasClass('is-mobile')) {
                         elem.css('background-image', 'url(' + image.replace(/([.])\w+/, '-sm.jpg') + ')').addClass('img-loaded');
                     } else {
@@ -100,21 +133,49 @@
         });
     }
 
+
+
+
+    //==========================================================================
+    //
+    //      init()
+    //
+    //      Groups several function together so they can be run on page change/update.
+    //
+    //==========================================================================
+
     function init(){
         checkMobile();
         checkNav();
         progImg();
     }
 
+
+    //==========================================================================
+
     $(function() {
         $('html').removeClass('no-js');
         init();
+        $('html').removeClass('no-js');
     });
 
+
+
+
+    //==========================================================================
+
     $(window).smartresize(function() {
-        console.log('resized');
         init();
     });
+
+
+
+
+    //==========================================================================
+    //
+    //      Toggle for navigation on mobile
+    //
+    //==========================================================================
 
     $('#body').on('click', '.mp-mobile', function() {
         $(this).parent().toggleClass('is-open');
@@ -123,13 +184,17 @@
         });
     });
 
-    $('body').on('click', '.mp-post-figure', function() {
-        expandImage.expand($(this));
-    });
 
-    $('body').on('click', '.is-expanded', function() {
-        expandImage.collapse();
-    });
+
+
+    //==========================================================================
+    //
+    //      expandImage (expand, collapse)
+    //
+    //      images in articles/posts will expand to fullscreen on click/tap and
+    //      collapse on second click/tap
+    //
+    //==========================================================================
 
     const expandImage = {
         expand: function(elem) {
@@ -156,12 +221,7 @@
                 'width': '100%',
                 'height': '100%'
             }, 500);
-            // hammertime.get('swipe').set({ enable: true });
-            // hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-            // hammertime.on('swipe', function(ev) {
-            // 	expandImage.collapse();
-            //     hammertime.get('swipe').set({ enable: false });
-            // });
+
         },
         collapse: function() {
             var img = $('.is-expanded');
@@ -176,14 +236,19 @@
         }
     };
 
-    $(window).smartresize(function() {
+    $('body').on('click', '.mp-post-figure', function() {
+        expandImage.expand($(this));
+    });
 
-    })
+    $('body').on('click', '.is-expanded', function() {
+        expandImage.collapse();
+    });
 
-    // var myElement = document.getElementById('body');
-    // var hammertime = new Hammer(myElement);
-
-
+    //==========================================================================
+    //
+    //      sets class on body when scrolled, used for floating back button.
+    //
+    //==========================================================================
 
     $(document).on("scroll", function(e) {
         if ($(document).scrollTop() > 413) {
@@ -193,18 +258,56 @@
         }
     });
 
-    checkNav();
 
-    // function boundless() {
+
+
+    //==========================================================================
     //
-    //         var path = $('.mp-path');
-    //         var length = path[0].getTotalLength();
-    //         path.css({
-    //             'stroke-dasharray': (length * 0.1) + ' ' + (length * 0.9),
-    //             'stroke-dashoffset': length
-    //         });
+    //      Animates perview images into header
     //
-    // }
+    //==========================================================================
+
+function imageMorph(elem, $curr) {
+    console.log($curr.find(elem));
+    $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
+    var item   = $curr.find(elem),
+    bounds = item[0].getBoundingClientRect(),
+    box    = $('.mp-content ')[0].getBoundingClientRect(),
+    clone  = item.clone().appendTo('.mp-content');
+
+    clone.css({
+        'position': 'fixed',
+        'top': bounds.top,
+        'left': bounds.left,
+        'width': bounds.width,
+        'height': '120px'
+    }).addClass('mp-transitioning');
+    if ($(window).innerWidth() > 1000) {
+        clone.animate({
+            'left': box.left,
+            'top': box.top,
+            'width': box.width,
+            'height': '250px',
+            'opacity': '.7'
+        }, 600);
+    } else {
+        clone.animate({
+            'left': 0,
+            'top': '48px',
+            'width': '100%',
+            'height': '250px',
+            'opacity': '.7'
+        }, 600);
+    }
+}
+
+    //==========================================================================
+    //
+    //      smoothState
+    //
+    //      Plugin options for animated page transitions.
+    //
+    //==========================================================================
 
     var options = {
             prefetch: true,
@@ -212,35 +315,9 @@
             scroll: true,
             onBefore: function($currentTarget) {
                 if ($currentTarget.hasClass('mp-article-link') && $currentTarget.find('.mp-article-img').length == 1) {
-                    $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
-                    var item   = $currentTarget.find('.mp-article-img'),
-                        bounds = item[0].getBoundingClientRect(),
-                        box    = $('.mp-content ')[0].getBoundingClientRect(),
-                        clone  = item.clone().appendTo('.mp-content');
-                    clone.css({
-                        'position': 'fixed',
-                        'top': bounds.top,
-                        'left': bounds.left,
-                        'width': bounds.width,
-                        'height': '120px'
-                    }).addClass('mp-transitioning');
-                    if ($(window).innerWidth() > 1000) {
-                        clone.animate({
-                            'left': box.left,
-                            'top': box.top,
-                            'width': box.width,
-                            'height': '250px',
-                            'opacity': '.7'
-                        }, 600);
-                    } else {
-                        clone.animate({
-                            'left': 0,
-                            'top': '48px',
-                            'width': '100%',
-                            'height': '250px',
-                            'opacity': '.7'
-                        }, 600);
-                    }
+                    imageMorph('.mp-article-img', $currentTarget);
+                } else if ($currentTarget.hasClass('mp-gallery-link')) {
+                    imageMorph('.mp-gallery-image', $currentTarget);
                 }
             },
             onStart: {
@@ -267,7 +344,5 @@
             }
         },
         smoothState = $('#main').smoothState(options).data('smoothState');
-
-    //boundless();
 
 })(jQuery);

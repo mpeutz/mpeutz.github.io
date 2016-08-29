@@ -11,7 +11,10 @@
 
 
     <!-- When we generate critical CSS -->
-    <style type="text/css"></style>
+    <style type="text/css">
+        { % include critical.css % }
+        .no-js svg { display: none !important; }
+    </style>
 
     <link rel="icon" href="{{site.baseurl}}/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/assets/favicon/apple-touch-icon.png">
@@ -21,8 +24,6 @@
     <link rel="mask-icon" href="{{site.baseurl}}/assets/favicon/safari-pinned-tab.svg" color="#eb5757">
     <meta name="theme-color" content="#eb5757">
 
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="Peutzdesign RSS" href="/feed.xml" />
 
 </head>
@@ -30,36 +31,52 @@
 
 <body id="body">
     <main id="main" class="main mp-scene">
-        <!--[if lt IE 8]>
+        <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header id="navigation">
             {% include navigation.html navclass='top-nav' %}
         </header>
+
         <div id="content" class="mp-page" data-page="{% if page.title %}mp-{{ page.url | replace:'/',' ' | truncatewords: 1 | remove:'...' }}{% else %}mp-home{% endif %}">
             <!-- {% include loader.html %} -->
             <div class="mp-page-back">
-                <div class="mp-content {% if page.is_post %} is-post{% endif %}">
+                <div class="mp-content {% if page.is_post %} is-post{% endif %} {% if page.layout == 'gallery'%} is-post{% endif %}">
                     {{content}}
                 </div>
-
             </div>
 
             <footer id="footer">
                 {% include footer.html %}
             </footer>
-
         </div>
-
     </main>
 
-    <script  async src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script  async src="{{site.baseurl}}/script/script.js"></script>
-    <script async src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.26/webfontloader.js"></script>
 
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script async src="{{site.baseurl}}/script/script.js"></script>
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css"/>
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function() {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script async>
+    <script>
         (function(b, o, i, l, e, r) {
             b.GoogleAnalyticsObject = l;
             b[l] || (b[l] =
@@ -76,5 +93,4 @@
         ga('send', 'pageview');
     </script>
 </body>
-
 </html>

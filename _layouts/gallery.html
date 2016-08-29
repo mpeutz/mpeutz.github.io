@@ -1,15 +1,26 @@
 ---
 layout: master
 ---
-<div class="mp-wrap mp-gallery-page">
 
-    <div class="mp-pane mp-one mp-element mp-scale" style="background-image:url('{{ page.image }}')">
+<div class="mp-post mp-gallery-page" itemscope itemtype="http://schema.org/Article">
 
+    <div class="">
+        <div class="mp-post-header mp-elem mp-exit-slideUp">
+            <div class="mp-post-image mp-img-loader" {% if page.image %} data-src='{{ page.image }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
+            <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
+        </div>
+
+        <div class="mp-element mp-slideDown">
+
+
+            <div class="mp-post-content">
+
+                {{content}}
+                <a class="mp-back-link" href="/{{page.collection}}">Back to {{page.collection}}</a>
+            </div>
+
+            {% include share.html %} {% include author.html %}
+
+        </div>
     </div>
-
-    <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
-        <a class="mp-back-link" href="/{{page.collection}}">Back to {{page.collection}}</a>
-        {{ content }}
-    </div>
-
 </div>
