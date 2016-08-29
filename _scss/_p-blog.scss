@@ -112,7 +112,7 @@
 
 .mp-article-meta,
 .mp-post-meta,
-.mp-gallery-count {
+.mp-portfolio-count {
     font-family: 'Futura', sans-serif;
     font-size: 12px;
     display: flex;
@@ -135,7 +135,7 @@
 
 .mp-article-readablity,
 .mp-article-date,
-.mp-gallery-count {
+.mp-portfolio-count {
     color: #fff;
     .no-image & {
         color: $text-color;

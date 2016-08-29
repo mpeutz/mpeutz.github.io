@@ -122,6 +122,7 @@
             } else {
                 img.attr('src', image);
                 img.on('load', function() {
+
                     if ($('html').hasClass('is-mobile')) {
                         elem.css('background-image', 'url(' + image.replace(/([.])\w+/, '-sm.jpg') + ')').addClass('img-loaded');
                     } else {
@@ -154,6 +155,7 @@
 
     $(function() {
         init();
+        $('html').removeClass('no-js');
     });
 
 
@@ -241,9 +243,6 @@
         expandImage.collapse();
     });
 
-
-
-
     //==========================================================================
     //
     //      sets class on body when scrolled, used for floating back button.
@@ -263,6 +262,46 @@
 
     //==========================================================================
     //
+    //      Animates perview images into header
+    //
+    //==========================================================================
+
+function imageMorph(elem, $curr) {
+    console.log($curr.find(elem));
+    $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
+    var item   = $curr.find(elem),
+    bounds = item[0].getBoundingClientRect(),
+    box    = $('.mp-content ')[0].getBoundingClientRect(),
+    clone  = item.clone().appendTo('.mp-content');
+
+    clone.css({
+        'position': 'fixed',
+        'top': bounds.top,
+        'left': bounds.left,
+        'width': bounds.width,
+        'height': '120px'
+    }).addClass('mp-transitioning');
+    if ($(window).innerWidth() > 1000) {
+        clone.animate({
+            'left': box.left,
+            'top': box.top,
+            'width': box.width,
+            'height': '250px',
+            'opacity': '.7'
+        }, 600);
+    } else {
+        clone.animate({
+            'left': 0,
+            'top': '48px',
+            'width': '100%',
+            'height': '250px',
+            'opacity': '.7'
+        }, 600);
+    }
+}
+
+    //==========================================================================
+    //
     //      smoothState
     //
     //      Plugin options for animated page transitions.
@@ -275,35 +314,9 @@
             scroll: true,
             onBefore: function($currentTarget) {
                 if ($currentTarget.hasClass('mp-article-link') && $currentTarget.find('.mp-article-img').length == 1) {
-                    $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
-                    var item   = $currentTarget.find('.mp-article-img'),
-                        bounds = item[0].getBoundingClientRect(),
-                        box    = $('.mp-content ')[0].getBoundingClientRect(),
-                        clone  = item.clone().appendTo('.mp-content');
-                    clone.css({
-                        'position': 'fixed',
-                        'top': bounds.top,
-                        'left': bounds.left,
-                        'width': bounds.width,
-                        'height': '120px'
-                    }).addClass('mp-transitioning');
-                    if ($(window).innerWidth() > 1000) {
-                        clone.animate({
-                            'left': box.left,
-                            'top': box.top,
-                            'width': box.width,
-                            'height': '250px',
-                            'opacity': '.7'
-                        }, 600);
-                    } else {
-                        clone.animate({
-                            'left': 0,
-                            'top': '48px',
-                            'width': '100%',
-                            'height': '250px',
-                            'opacity': '.7'
-                        }, 600);
-                    }
+                    imageMorph('.mp-article-img', $currentTarget);
+                } else if ($currentTarget.hasClass('mp-gallery-link')) {
+                    imageMorph('.mp-gallery-image', $currentTarget);
                 }
             },
             onStart: {

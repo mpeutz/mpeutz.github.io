@@ -12,9 +12,8 @@
 
     <!-- When we generate critical CSS -->
     <style type="text/css">
-        {
-            % include critical.css %
-        }
+        { % include critical.css % }
+        .no-js svg { display: none !important; }
     </style>
 
     <link rel="icon" href="{{site.baseurl}}/assets/favicon/favicon.ico" />
@@ -42,7 +41,7 @@
         <div id="content" class="mp-page" data-page="{% if page.title %}mp-{{ page.url | replace:'/',' ' | truncatewords: 1 | remove:'...' }}{% else %}mp-home{% endif %}">
             <!-- {% include loader.html %} -->
             <div class="mp-page-back">
-                <div class="mp-content {% if page.is_post %} is-post{% endif %}">
+                <div class="mp-content {% if page.is_post %} is-post{% endif %} {% if page.layout == 'gallery'%} is-post{% endif %}">
                     {{content}}
                 </div>
             </div>
