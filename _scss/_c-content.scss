@@ -21,14 +21,15 @@
     min-height: calc(100vh - 130px);
 	}
 
-@media (max-width: 1000px) {
-    .mp-content {
+@media (max-width: #{$break}) {
+    .mp-content,
+    .is-post.mp-content {
         position: relative;
         min-height: 100vh;
 	    }
 	}
 
-@media (min-width: 1000px) {
+@media (min-width: #{$break}) {
     .mp-wrap {
         height: 100%;
 	    }

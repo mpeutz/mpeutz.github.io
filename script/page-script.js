@@ -79,7 +79,7 @@
 
     function checkMobile() {
         var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false),
-            is_small = ($(window).innerWidth() < 1000 ? true : false );
+            is_small = ($(window).innerWidth() < 705 ? true : false );
 
         if (!is_mobile && !is_small) {
             $('html').removeClass('is-mobile');
