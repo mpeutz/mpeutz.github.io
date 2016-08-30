@@ -10,16 +10,19 @@
         animation-timing-function: ease-out;
 
         animation-fill-mode: both;
-        will-change: transform;
 	    }
 
     .mp-scale {
         animation-name: scale;
+
+        will-change: transform, opacity;
 	    }
 
     .mp-fade,
     .mp-enter-fade {
         animation-name: fade;
+
+        will-change: opacity;
 	    }
 
     .mp-one.mp-scale {
@@ -38,17 +41,21 @@
         animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
 	    }
 
-        .mp-slideInRight {
-            animation-name: slideInRight;
-            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
-    	    }
+    .mp-slideInRight {
+        animation-name: slideInRight;
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+	    }
 
     .mp-enter-fade {
         animation-name: fade;
+
+        will-change: opacity;
 	    }
 
     .mp-slideDown {
         animation-name: slideDown;
+
+        will-change: transform, opacity;
 	    }
 
     .mp-two .mp-element {
@@ -60,20 +67,20 @@
         animation-direction: alternate-reverse;
 	    }
 
-        .mp-two .mp-delay-1 {
-            animation-delay: .1s;
-            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
-        }
+    .mp-two .mp-delay-1 {
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        animation-delay: .1s;
+	    }
 
-        .mp-two .mp-delay-2 {
-            animation-delay: .3s;
-            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
-        }
+    .mp-two .mp-delay-2 {
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        animation-delay: .3s;
+	    }
 
-        .mp-two .mp-delay-3 {
-            animation-delay: .5s;
-            animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
-        }
+    .mp-two .mp-delay-3 {
+        animation-timing-function: cubic-bezier(.68, -.25, .265, 1.25);
+        animation-delay: .5s;
+	    }
 	}
 
 
@@ -134,13 +141,13 @@
 	    }
 	}
 
-    @keyframes slideInRight {
-        0% {
-            transform: translate3d(130%, 0, 0);
-            opacity: 0;
-    	    }
-        100% {
-            transform: none;
-            opacity: 1;
-    	    }
-    	}
+@keyframes slideInRight {
+    0% {
+        transform: translate3d(130%, 0, 0);
+        opacity: 0;
+	    }
+    100% {
+        transform: none;
+        opacity: 1;
+	    }
+	}

@@ -268,7 +268,7 @@
     //==========================================================================
 
 function imageMorph(elem, $curr) {
-    console.log($curr.find(elem));
+
     $('.mp-scale').addClass('mp-fade').removeClass('mp-scale');
     var item   = $curr.find(elem),
     bounds = item[0].getBoundingClientRect(),
@@ -282,14 +282,14 @@ function imageMorph(elem, $curr) {
         'width': bounds.width,
         'height': '120px'
     }).addClass('mp-transitioning');
-    if ($(window).innerWidth() > 1000) {
+    if ($(window).innerWidth() >= 705) {
         clone.animate({
             'left': box.left,
             'top': box.top,
             'width': box.width,
             'height': '250px',
             'opacity': '.7'
-        }, 600);
+        }, 500);
     } else {
         clone.animate({
             'left': 0,
@@ -297,9 +297,10 @@ function imageMorph(elem, $curr) {
             'width': '100%',
             'height': '250px',
             'opacity': '.7'
-        }, 600);
+        }, 500);
     }
 }
+
 
     //==========================================================================
     //
