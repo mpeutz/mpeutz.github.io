@@ -4,30 +4,43 @@ title: Digital
 meta: Digital images by Mike Peutz
 ---
 
-<div class="mp-wrap mp-digital">
+{% assign digi = site.galleries | where:"category", "digital" | first %}
+<div class="mp-wrap mp-digital mp-post">
 
-    {% assign digi = site.galleries | where:"category", "digital"  | first %}
-    <div class="mp-pane mp-one mp-element mp-scale" style="background-image: url({{site.baseurl}}{{ digi.image}})">
-        <div class="mp-pane-motto">
-            {{ digi.title }}
+    <div class="" style="width: 100%;">
+        <div class="mp-post-header mp-elem mp-exit-slideUp">
+            <div class="mp-post-image mp-img-loader" {% if digi.image %} data-src='{{site.baseurl}}{{digi.image}}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}></div>
+            <h1 class="mp-post-title" itemprop="name">{{digi.title}}</h1>
         </div>
-        <p class="mp-pane-text">
-            {{ digi.content | remove: '<p>' | remove: '</p>'}}
-        </p>
-    </div>
 
-    <div class="mp-pane mp-two mp-element mp-scale mp-scroller">
-        <a class="mp-back-link" href="/portfolio">Back to portfolio</a>
-        <ul class="mp-gallery">
-              {% for image in site.digital %}
-                <li class="mp-gallery-item">
-                  <a class="mp-gallery-link" href="{{ image.url }}">
-                    <div class="mp-gallery-title">{{ image.title }}</div>
-                    <div class="mp-gallery-image" style="background-image: url('{{ image.image }}')"></div>
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
+        <div class="mp-element mp-fade">
+
+            <div class="mp-cell-wrap">
+                <div class="mp-container">
+
+
+                    {% for image in site.digital %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 1 %}
+                    <div class="mp-cell {% cycle " wide-top ", "tall-right ", "tall-left " %}">
+                        <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <a class="mp-cell-link" href="{{ image.url }}"></a>
+                        </div>
+                        {% elsif loopindex == 2 %}
+                        <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <a class="mp-cell-link" href="{{ image.url }}"></a>
+                        </div>
+                        {% else %}
+                        <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <a class="mp-cell-link" href="{{ image.url }}"></a>
+                        </div>
+                    </div>
+                    {% endif %} {% endfor %}
+
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
 </div>
