@@ -89,17 +89,26 @@ $fullHeight: 2 * ($cellHeight + $gap);
     position: relative;
     max-width: $break;
     margin: 4em auto;
+    padding-left: 2em;
+    padding-right: 2em;
 
-    column-count: 2;
-    column-gap: $gap;
 	}
-.mp-cell {
-    display: flex;
+    .mp-container {
+      display: flex;
+      flex-wrap:wrap;
 
-    break-inside: avoid;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	}
+      justify-content: center;
+    }
+    .mp-cell {
+      flex: 0 0 calc(50% - (#{$gap} / 2));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &:nth-child(even) {
+          margin-left: $gap;
+      }
+    }
+
 .mp-cell-content {
     box-sizing: border-box;
     max-width: calc(50% - (#{$gap} / 2));
@@ -132,6 +141,7 @@ $fullHeight: 2 * ($cellHeight + $gap);
 .tall-left {
     flex-direction: column;
     max-height: $fullHeight;
+    align-self: flex-start;
     .mp-cell-content {
         width: calc(50% - 0em);
 	    }
@@ -194,6 +204,17 @@ $fullHeight: 2 * ($cellHeight + $gap);
 }
 
 @media (max-width: #{$mobile}) {
+    .mp-digital  .mp-post-header,
+    .mp-interface  .mp-post-header,
+    .mp-traditional  .mp-post-header {
+        margin-top: 0;
+    }
+    .mp-cell {
+      flex: 0 0 100%;
+      &:nth-child(even) {
+          margin-left: 0;
+      }
+    }
     .mp-gallery-header {
         padding-top: 4em;
     }
@@ -201,3 +222,11 @@ $fullHeight: 2 * ($cellHeight + $gap);
         background-size: cover;
     }
 }
+@media (max-width: #{$break}) {
+    .mp-digital .mp-content,
+    .mp-interface .mp-content,
+    .mp-traditional .mp-content {
+        position: relative;
+        min-height: 100vh;
+	    }
+	}
