@@ -15,11 +15,8 @@ meta: User interfaces by Mike Peutz
         </div>
 
         <div class="mp-element mp-fade">
-
             <div class="mp-cell-wrap">
                 <div class="mp-container">
-
-
                     {% for image in site.interface %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 1 %}
                     <div class="mp-cell {% cycle " wide-top ", "tall-right ", "tall-left " %}">
                         <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
@@ -35,13 +32,9 @@ meta: User interfaces by Mike Peutz
                         </div>
                     </div>
                     {% endif %} {% endfor %}
-
-
                 </div>
-
-
+                <a class="mp-back-link" href="/portfolio">Back to portfolio</a>
             </div>
         </div>
     </div>
-
 </div>

@@ -81,6 +81,11 @@
     min-height: calc(100vh - 130px);
 }
 
+.mp-back-link {
+    display: inline-block;
+    position: relative;
+}
+
 $gap: 1em;
 $cellHeight: 12em;
 $fullHeight: 2 * ($cellHeight + $gap);
@@ -114,7 +119,7 @@ $fullHeight: 2 * ($cellHeight + $gap);
     max-width: calc(50% - (#{$gap} / 2));
     height: $cellHeight;
     margin-bottom: $gap;
-    background-color: #f60;
+    background-color: $text-color;
     position: relative;
     background-size: cover;
     background-position: 50%;
@@ -215,8 +220,11 @@ $fullHeight: 2 * ($cellHeight + $gap);
           margin-left: 0;
       }
     }
+    .mp-gallery-image {
+        width: calc(100% - 2em);
+    }
     .mp-gallery-header {
-        padding-top: 4em;
+        padding: 4em 1em 2em;
     }
     .mp-gallery-page .mp-gallery-image {
         background-size: cover;
