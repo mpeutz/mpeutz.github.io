@@ -5,10 +5,20 @@ layout: master
 <div class="mp-post mp-gallery-page" itemscope itemtype="http://schema.org/Article">
 
     <div class="">
-        <!-- <div class="mp-post-header mp-elem mp-exit-slideUp">
-            <div class="mp-post-image mp-img-loader" {% if page.image %} data-src='{{ page.image }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
-            <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
-        </div> -->
+
+        <div class="mp-gallery-header">
+            <div class="mp-gallery-title" itemprop="name">{{page.title}} </div>
+            <div class="mp-gallery-meta">
+                <div class="mp-gallery-dimension">
+                    {{page.dimension}}
+                </div>
+                <div class="mp-gallery-app">
+                    {{page.app}}
+                </div>
+            </div>
+        </div>
+
+        <div class="mp-gallery-image mp-img-loader" {% if page.image %} data-src='{{ page.image }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
 
         <div class="mp-element mp-slideDown">
 
@@ -19,7 +29,7 @@ layout: master
                 <a class="mp-back-link" href="/{{page.collection}}">Back to {{page.collection}}</a>
             </div>
 
-            {% include share.html %} {% include author.html %}
+            {% include share.html %}
 
         </div>
     </div>

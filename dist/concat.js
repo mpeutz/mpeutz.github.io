@@ -337,8 +337,8 @@ function imageMorph(elem, $curr) {
             onBefore: function($currentTarget) {
                 if ($currentTarget.hasClass('mp-article-link') && $currentTarget.find('.mp-article-img').length == 1) {
                     imageMorph('.mp-article-img', $currentTarget);
-                } else if ($currentTarget.hasClass('mp-gallery-link')) {
-                    imageMorph('.mp-gallery-image', $currentTarget);
+                } else if ($currentTarget.hasClass('mp-portfolio-link')) {
+                    imageMorph('.mp-portfolio-image', $currentTarget);
                 }
             },
             onStart: {

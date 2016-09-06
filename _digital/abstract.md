@@ -2,6 +2,8 @@
 layout: gallery
 category: aviary
 title: Abstract II
+dimension: 1200×760
+app: Aviary Peacock (No longer availible)
 image: ../../assets/images/abstract.png
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: gallery
 category: ui
-title: UI Stuff
+title: Engage
 dimension: 1200×760
 app: Adobe Fireworks
 image: ../../assets/images/Terrain.png
