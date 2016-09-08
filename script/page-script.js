@@ -113,6 +113,7 @@
                 elem = $(this),
                 img = $('<img />');
 
+                img.attr('itemprop','image');
 
             // if image is cached show large version immedatly. if not show
             // low-res image and load large one in hidden div. Once large version
@@ -244,6 +245,8 @@
         expandImage.collapse();
     });
 
+
+
     //==========================================================================
     //
     //      sets class on body when scrolled, used for floating back button.
@@ -260,6 +263,25 @@
 
 
 
+
+    //==========================================================================
+    //
+    //     staggers gallery images.
+    //
+    //==========================================================================
+
+
+function stagger() {
+    $(".mp-cell-content").each(function(i) {
+        var $item = $(this);
+        $item.css({'opacity': 0});
+        setTimeout(function() {
+            $item.animate({
+                'opacity': 1
+            }, 200);
+        }, 50 * i);
+    });
+}
 
     //==========================================================================
     //
@@ -343,6 +365,7 @@ function imageMorph(elem, $curr) {
             },
             onAfter: function($container, $newContent) {
                 init();
+                stagger();
             }
         },
         smoothState = $('#main').smoothState(options).data('smoothState');

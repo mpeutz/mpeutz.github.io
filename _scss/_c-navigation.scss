@@ -105,6 +105,7 @@
     display: block;
     cursor: default;
     background-color: $body-color;
+    background-image: linear-gradient(to bottom, lighten($body-color, 10), lighten($body-color, 5));
 	}
 
 @media (max-width: #{$mobile}) {
@@ -115,6 +116,7 @@
         top: 0;
         width: 100%;
         background-color: $body-color;
+        background-image: linear-gradient(to bottom, lighten($body-color, 10), lighten($body-color, 5));
 	    }
 
     .mp-nav-list {
@@ -255,10 +257,10 @@
     .mp-digital .mp-nav-current,
     .mp-interface .mp-nav-current,
     .mp-traditional .mp-nav-current {
-        right: 150px;
+        right: 155px;
 	    }
     .mp-about .mp-nav-current {
-        right: 61px;
+        right: 65px;
 	    }
     .mp-nav .mp-made {
         display: none;

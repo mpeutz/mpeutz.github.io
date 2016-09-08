@@ -2,8 +2,10 @@
 layout: gallery
 category: aviary
 title: Lions Tooth
-dimension: 1200×760
-app: Aviary Peacock (No longer availible)
+width: 1200
+height: 760
+unit: px
+app: Aviary Peacock (No longer available)
 image: ../../assets/images/lionstooth.png
 ---
 

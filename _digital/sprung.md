@@ -1,9 +1,11 @@
 ---
 layout: gallery
 category: aviary
-title: Spring has srung
-dimension: 1200×760
-app: Aviary Peacock (No longer availible)
+title: Spring has sprung
+width: 1200
+height: 760
+unit: px
+app: Aviary Peacock (No longer available)
 image: ../../assets/images/sprung.jpg
 ---
 
