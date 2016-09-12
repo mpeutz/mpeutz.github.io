@@ -19,15 +19,15 @@ meta: Traditional artwork by Mike Peutz
                     <div class="mp-container">
                         {% for image in site.traditional %} {% assign loopindex = forloop.index | modulo: 3 %} {% if loopindex == 1 %}
                         <div class="mp-cell {% cycle " wide-top ", "tall-right ", "tall-left " %}">
-                            <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <div class="mp-cell-content" style="background-image: url('{{site.baseurl}}/assets/images/{{ image.image }}')">
                                 <a class="mp-cell-link" href="{{ image.url }}"></a>
                             </div>
                             {% elsif loopindex == 2 %}
-                            <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <div class="mp-cell-content" style="background-image: url('{{site.baseurl}}/assets/images/{{ image.image }}')">
                                 <a class="mp-cell-link" href="{{ image.url }}"></a>
                             </div>
                             {% else %}
-                            <div class="mp-cell-content" style="background-image: url('{{ image.image }}')">
+                            <div class="mp-cell-content" style="background-image: url('{{site.baseurl}}/assets/images/{{ image.image }}')">
                                 <a class="mp-cell-link" href="{{ image.url }}"></a>
                             </div>
                         </div>

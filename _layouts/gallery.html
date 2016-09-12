@@ -9,7 +9,7 @@ layout: master
             <div class="mp-gallery-title" itemprop="name">{{page.title}} </div>
             <div class="mp-gallery-meta">
                 <div class="mp-gallery-dimension">
-                    {{page.height}} × {{page.width}} {{page.unit}}
+                    {{page.width}} × {{page.height}} {{page.unit}}
                 </div>
                 <div class="mp-gallery-app">
                     {{page.app}}
@@ -19,7 +19,7 @@ layout: master
 
         <meta itemprop="image" content="{{ page.image }}"></meta>
         <meta itemprop="author" content="Mike Peutz"></meta>
-        <div class="mp-gallery-image mp-img-loader mp-element mp-iris" {% if page.image %} data-src='{{ page.image }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
+        <div class="mp-gallery-image mp-img-loader mp-element mp-iris" {% if page.image %} data-src='{{site.baseurl}}/assets/images/{{ page.image }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
 
         <div class="mp-element mp-slideDown">
 
@@ -31,12 +31,11 @@ layout: master
             </div>
 
             <div class="mp-share">
-
                 <div class="mp-share-title">
                     Share this {% if page.is_post %}post{% else %}page{% endif %}
                 </div>
                 <div class="mp-share-links">
-                    <a class="mp-share-link" href="http://twitter.com/intent/tweet?url={{ page.image }}&text={{page.title}}&via=mpeutz" target="_blank" content="nofollow">
+                    <a class="mp-share-link" href="http://twitter.com/intent/tweet?url=http://www.peutzdesign.com/{{page.permalink}}&text={{page.title}}&via=mpeutz&hashtags={{page.category}}" target="_blank" content="nofollow">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 113.2c-18.8 8.4-39 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58-20.4 12-43 20.7-66.8 25.4-19.2-20.3-46.5-33-76.7-33-58 0-105 47-105 105 0 8.2 1 16.2 2.7 24C165 188.4 87.5 146.6 35.7 83c-9 15.6-14.2 33.7-14.2 53 0 36.3 18.5 68.5 46.7 87.3-17.2-.5-33.4-5.3-47.6-13v1.2c0 51 36.2 93.4 84.3 103-9 2.4-18.2 3.7-27.8 3.7-6.8 0-13.3-.7-19.8-2 13.4 41.8 52.2 72.2 98 73-36 28.3-81 45-130.4 45-8.5 0-16.8-.4-25-1.4 46.5 30 101.7 47.2 161 47.2 193.2 0 299-160 299-299 0-4.5-.2-9-.4-13.5 20.5-14.7 38.3-33.2 52.4-54.3z"/></svg>
                     </a>
                     <a class="mp-share-link" href="http://facebook.com/sharer.php?u=http://www.peutzdesign.com/{{page.permalink}}"target="_blank" content="nofollow">
@@ -45,10 +44,10 @@ layout: master
                     <a class="mp-share-link" href="https://plus.google.com/share?url=http://www.peutzdesign.com/{{page.permalink}}" target="_blank" content="nofollow">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M163 228.7v56h92.3c-3.7 24-28 70.2-92.4 70.2-55.7 0-101-46.2-101-103s45.3-103 101-103c31.6 0 52.7 13.6 64.8 25.2l44.2-42.6C243.6 105 206.8 89 163 89 72.7 89 0 162 0 252s72.8 163 163 163c94 0 156.3-66.2 156.3-159.3 0-10.7-1.2-19-2.6-27H163zM512 224h-48v-48h-48v48h-48v48h48v48h48v-48h48z"/></svg>
                     </a>
-                    <a class="mp-share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.peutzdesign.com/{{page.permalink}}&title={{page.title}}"target="_blank" content="nofollow">
+                    <a class="mp-share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.peutzdesign.com/{{page.permalink}}&amp;title={{page.title|xml_escape}}&amp;summary={{page.content|strip_html|truncatewords:20|xml_escape}}" target="_blank" content="nofollow">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M192 192h88.6v45.4h1.2c12.3-22 42.5-45.4 87.4-45.4 93.5 0 110.8 58.2 110.8 134v154h-92.3V343.4c0-32.6-.7-74.6-48-74.6-48 0-55.4 35.5-55.4 72.2v139H192V192zM32 192h96v288H32V192zM128 112c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48z"/></svg>
                     </a>
-                    <a class="mp-share-link" href="https://pinterest.com/pin/create/button/?url='http://www.peutzdesign.com/{{page.permalink}}&media=http://www.peutzdesign.com/assets/images/{{page.image}}" target="_blank" content="nofollow">
+                    <a class="mp-share-link" href="https://pinterest.com/pin/create/button/?url=http://www.peutzdesign.com/{{page.permalink}}&amp;media=http://www.peutzdesign.com/assets/images/{{page.image}}&amp;description={{ page.title | escape }}" target="_blank" content="nofollow">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 34.2C133.5 34.2 34.2 133.5 34.2 256c0 94 58.5 174.2 141 206.5-2-17.5-3.7-44.5.8-63.6l26-110.3s-6.6-13.3-6.6-33c0-30.7 18-53.8 40-53.8 19 0 28.2 14 28.2 31 0 19-12 47.6-18.4 74-5.3 22 11 40 32.8 40 39.4 0 69.7-41.6 69.7-101.6 0-53-38.2-90.2-92.6-90.2-63 0-100 47.3-100 96.3 0 19 7.3 39.5 16.5 50.6 1.8 2.3 2 4.2 1.5 6.5l-6.2 25.2c-1 4-3.2 5-7.4 3-27.7-13-45-53.4-45-86 0-70 50.8-134 146.5-134 76.8 0 136.6 54.7 136.6 128 0 76.4-48.2 138-115 138-22.6 0-43.7-11.7-51-25.5L218 410c-5 19.2-18.6 43.3-27.7 58 20.8 6.4 42.8 10 65.7 10 122.5 0 221.8-99.4 221.8-222 0-122.5-99.3-221.8-221.8-221.8z"/></svg>
                     </a>
                 </div>

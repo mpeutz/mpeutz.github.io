@@ -157,7 +157,6 @@
     $(function() {
         $('html').removeClass('no-js');
         init();
-        $('html').removeClass('no-js');
     });
 
 

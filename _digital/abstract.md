@@ -6,7 +6,7 @@ width: 1200
 height: 760
 unit: px
 app: Aviary Peacock (No longer available)
-image: ../../assets/images/abstract.png
+image: abstract.png
 ---
 
 Alright, this next test may involve trace amounts of time travel. So, word of advice: If you meet yourself on the testing track, don't make eye contact. Lab boys tell me that'll wipe out time. Entirely. Forward and backward! So do both of yourselves a favor and just let that handsome devil go about his business.

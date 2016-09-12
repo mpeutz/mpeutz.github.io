@@ -1,12 +1,12 @@
 ---
 layout: gallery
-category: oil
+category: oil painting
 title: Inside out
 width: 16
 height: 38
 unit: in
 app: Oil paint on canvas
-image: ../../assets/images/o7.jpg
+image: o7.jpg
 ---
 
 Oil paint on canvas

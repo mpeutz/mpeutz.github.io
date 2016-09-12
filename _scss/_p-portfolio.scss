@@ -191,13 +191,14 @@ $fullHeight: 2 * ($cellHeight + $gap);
 }
 
 .mp-gallery-image {
-    width: calc(100% - 4em);
+    //width: calc(100% - 4em);
     height: 60vh;
     margin: auto;
 }
 
 .mp-gallery-page .mp-gallery-image {
     background-size: contain;
+    background-color: #1b2225;
 }
 
 .mp-gallery-page .mp-share {
