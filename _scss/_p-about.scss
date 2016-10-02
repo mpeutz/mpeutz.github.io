@@ -38,7 +38,7 @@
     position: relative;
     width: 100%;
     max-width: 960px;
-    height: 620px;
+    height: 650px;
     margin: auto;
 	}
 
@@ -109,7 +109,7 @@
     font-family: 'Futura', sans-serif;
     font-weight: bold;
     display: block;
-    margin: 0 0 10px;
+    margin: 0 0.5em 10px;
     animation: 1s anim-lightspeed-in ease forwards;
     opacity: 0;
 
@@ -144,7 +144,7 @@
         @include stagger-anim-delay(7, .25s, .2s);
 	    }
     .mp-chart-design & {
-        @include stagger-anim-delay(5, .9s, .2s);
+        @include stagger-anim-delay(6, .9s, .2s);
         }
     .mp-chart-prod & {
         @include stagger-anim-delay(2, 1.5s, .2s);
