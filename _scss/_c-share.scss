@@ -20,6 +20,7 @@
     align-items: center;
 	}
 
+.mp-social svg,
 .mp-share-link svg {
     width: 24px;
     height: 24px;
@@ -29,6 +30,7 @@
     fill: $text-color;
 	}
 
+.mp-social:hover svg,
 .mp-share-link:hover svg {
     opacity: 1;
 	}

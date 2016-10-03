@@ -141,4 +141,5 @@ p {
     @include responsiveNum('line-height', 1.5, 1.75);
     font-size: 1em;
     margin: 0 0 1.75em;
+    letter-spacing: 0.025em;
     }
