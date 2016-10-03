@@ -113,7 +113,7 @@
 
     justify-content: space-between;
     align-items: flex-start;
-    flex: 1 1 100px;
+    flex: 0 1 auto;
     .mp-about & {
         width: 100%;
     }
@@ -165,4 +165,7 @@
         top: 48px;
         min-height: calc(100vh - 48px);
 	    }
+    .mp-socials {
+        flex: 1 1 100px;
+        }
 	}
