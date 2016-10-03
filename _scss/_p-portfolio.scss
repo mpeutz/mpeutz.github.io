@@ -222,13 +222,13 @@ $fullHeight: 2 * ($cellHeight + $gap);
       }
     }
     .mp-gallery-image {
-        width: calc(100% - 2em);
+        width: 100%;
     }
     .mp-gallery-header {
         padding: 4em 1em 2em;
     }
     .mp-gallery-page .mp-gallery-image {
-        background-size: cover;
+        background-size: contain;
     }
 }
 @media (max-width: #{$break}) {

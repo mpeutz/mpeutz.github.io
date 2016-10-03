@@ -112,7 +112,8 @@
     width: calc(100% - 12em);
 
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex: 1 1 100px;
     .mp-about & {
         width: 100%;
     }
