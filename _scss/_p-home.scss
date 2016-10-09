@@ -41,7 +41,7 @@
 	}
 
 @supports (mix-blend-mode: soft-light) {
-    .mp-img-loader:after {
+    .mp-img-loader:not(.is-expanded):after {
         background: linear-gradient(-45deg, #ec65b7 0%, #05e0d8 100%);
 
         mix-blend-mode: hard-light;
