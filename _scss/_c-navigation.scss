@@ -25,7 +25,7 @@
     width: 60px;
     height: 60px;
     padding: 1em;
-    background-color: #eb5757;
+    background-color: $logo-color;
     box-shadow: 0 0 8px rgba(0, 0, 0, .5);
 	}
 
@@ -211,7 +211,7 @@
         padding: .75em 1em;
         background-color: $logo-color;
         box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-	    }
+    }
 
     .mp-logo-svg {
         fill: #fff;
@@ -228,7 +228,7 @@
 
     .mp-mobile {
         display: none;
-	    }
+    }
 
     .mp-nav-current {
         position: absolute;
@@ -241,7 +241,7 @@
         border-width: 0 5px 8px;
         border-style: solid;
         border-color: transparent transparent #fff;
-	    }
+    }
 
     .mp-home .mp-nav-current {
         right: 371px;

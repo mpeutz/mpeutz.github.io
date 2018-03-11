@@ -7,7 +7,15 @@ layout: master
     <div class="">
     <div class="mp-post-header mp-elem mp-exit-slideUp">
         <div class="mp-post-image mp-img-loader" {% if page.img %} data-src='{{site.baseurl}}/assets/images/{{ page.img }}' {% else %} data-src='{{site.baseurl}}/assets/images/fallback.jpg' {% endif %}>{{asset-path}}</div>
-            <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
+                        <div class="mp-title-block">
+                <a class="mp-lab-link" href="/blog">
+                    <svg class="mp-post-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576">
+                        <path d="M41.3 310.7l192 192c12.5 12.4 32.8 12.4 45.3 0 12.5-12.6 12.5-33 0-45.4L141.2 320h371c17.6 0 32-14.3 32-32s-14.4-32-32-32H141l137.4-137.3c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.4 0l-192 192c-6.2 6.2-9.4 14.4-9.3 22.6-.2 8.2 3 16.4 9.3 22.7z"
+                        />
+                    </svg>
+                </a>
+                <h1 class="mp-post-title" itemprop="name">{{page.title}}</h1>
+            </div>
             {% if page.tags %}
             <div class="mp-post-tags">
                 {% for tag in page.tags %}
@@ -68,8 +76,11 @@ layout: master
         {% include author.html %}
 
     </div>
-    <div class="mp-post-back"><a href="/blog" style="text-decoration:none;"><svg class="mp-post-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M41.3 310.7l192 192c12.5 12.4 32.8 12.4 45.3 0 12.5-12.6 12.5-33 0-45.4L141.2 320h371c17.6 0 32-14.3 32-32s-14.4-32-32-32H141l137.4-137.3c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.4 0l-192 192c-6.2 6.2-9.4 14.4-9.3 22.6-.2 8.2 3 16.4 9.3 22.7z"/></svg><div class="mp-post-backtext">
-        Back to Blog
-        </div></a></div>
+    <div class="mp-post-back">
+        <svg class="mp-post-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M170 533.333l342-342 342 342-62 60-238-238v520h-84v-520l-240 238z"/></svg>
+        <div class="mp-post-backtext">
+            to top
+        </div>
+    </div>
 </div>
 </div>

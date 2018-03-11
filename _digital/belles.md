@@ -2,11 +2,11 @@
 layout: gallery
 category: aviary
 title: Queen smelly
-width: 1200
-height: 760
+width: 1357
+height: 1200
 unit: px
-app: Aviary Peacock (No longer available)
-image: belles.png
+app: Aviary Phoenix (No longer available)
+image: digital/belles.png
 ---
 
-The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+Portrait of my dog enhanced using Aviary.com photo manipulation app Phoenix. I have added a slight blurred vignette and sharpening to the image.

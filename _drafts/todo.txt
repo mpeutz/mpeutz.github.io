@@ -7,4 +7,9 @@ Mixins (Locks)
 
 LABS
 Buttons (simple with interactions)
-Alerts (update toast alerts from codepen)
+Alerts (update toast alerts from code pen)
+
+Site 
+Fallback if no smaller image is present.
+fix JavaScript compiling
+make real critical css

@@ -6,6 +6,12 @@ layout: master
 
     <div class="">
         <div class="mp-gallery-header">
+            <a class="mp-gallery-link" href="/{{page.collection}}">
+                <svg class="mp-post-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576">
+                    <path d="M41.3 310.7l192 192c12.5 12.4 32.8 12.4 45.3 0 12.5-12.6 12.5-33 0-45.4L141.2 320h371c17.6 0 32-14.3 32-32s-14.4-32-32-32H141l137.4-137.3c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.4 0l-192 192c-6.2 6.2-9.4 14.4-9.3 22.6-.2 8.2 3 16.4 9.3 22.7z"
+                    />
+                </svg>
+            </a>
             <div class="mp-gallery-title" itemprop="name">{{page.title}} </div>
             <div class="mp-gallery-meta">
                 <div class="mp-gallery-dimension">
@@ -27,11 +33,13 @@ layout: master
             <div class="mp-post-content" itemprop="description">
 
                 {{content}}
+                {% include related.html %}
                 <a class="mp-back-link" href="/{{page.collection}}">Back to {{page.collection}}</a>
             </div>
 
-            {% include share.html %}
 
+            {% include share.html %}
+            
         </div>
     </div>
 </div>

@@ -38,7 +38,7 @@
     position: relative;
     width: 100%;
     max-width: 960px;
-    height: 700px;
+    height: 760px;
     margin: auto;
     padding-bottom: 2em;
 	}
@@ -54,7 +54,7 @@
         position: absolute;
         width: 1px;
         height: inherit;
-        @include responsiveNum('font-size', 12px, 16px)
+        @include responsiveNum('font-size', 12px, 16px);
         background: #ccc;
 
         &.mp-l-0 {

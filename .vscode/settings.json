@@ -1,0 +1,15 @@
+{
+    "spellright.language": "en",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "javascript"
+    ],
+    "cSpell.words": [
+        "Figma",
+        "exerpt",
+        "scroller",
+        "tradish"
+    ]
+}

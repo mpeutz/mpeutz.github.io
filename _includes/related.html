@@ -1,0 +1,12 @@
+<!-- related -->
+
+{% if page.related %}
+<div class="mp-related">
+    <div class="mp-related-title">Related</div>
+    <div class="mp-related-group">
+        {% for item in page.related %}
+        <div class="mp-related-item">{{item.item}} {{item.image}}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

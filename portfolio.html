@@ -2,14 +2,14 @@
 layout: master
 title: Portfolio
 meta: Portfolio of images and illustrations by Mike Peutz
-digitalImg: /assets/images/apple.png
+digitalImg: /assets/images/digital/apple.png
 interfaceImg: /assets/images/belles.png
 traditionalImg: /assets/images/tradish.jpg
 ---
 
 <div class="mp-wrap mp-portfolio">
 
-    <div class="mp-pane mp-one mp-element mp-scale mp-img-loader" data-src="{{ site.baseurl }}/assets/images/dreams.png">
+    <div class="mp-pane mp-one mp-element mp-scale mp-img-loader" data-src="{{ site.baseurl }}/assets/images/digital/dreams.png">
         <div class="mp-pane-motto">
             Portfolio
         </div>
@@ -22,7 +22,7 @@ traditionalImg: /assets/images/tradish.jpg
 
                 <a class="mp-portfolio-link" href="/{{item.category}}">
                     <div class="mp-portfolio-title">{{item.title}}</div>
-                    <div class="mp-portfolio-image" style="background-image: url({{site.baseurl}}{{item.image}})">
+                    <div class="mp-portfolio-image" style="background-image: url({{site.baseurl}}{{item.image}});">
                         <div class="mp-portfolio-count">
                             {{ site[cat] | size }} Images
                         </div>

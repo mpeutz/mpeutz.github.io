@@ -2,11 +2,13 @@
 layout: gallery
 category: aviary
 title: apple oil painting
-width: 1200
-height: 760
+width: 1000
+height: 1000
 unit: px
 app: Aviary Peacock (No longer available)
-image: apple.png
+image: digital/apple.png
 ---
 
-The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+This apple image was an experiment to create a complex image using Aviary's pattern generator application Peacock. Here is a video of the creation process of the base image before the oil paint effect was added:
+
+<iframe class="video" width="600" height="315" src="https://www.youtube-nocookie.com/embed/gvYk-dbtbeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

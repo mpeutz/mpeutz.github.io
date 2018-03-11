@@ -2,11 +2,11 @@
 layout: gallery
 category: aviary
 title:  L'il Piggy
-width: 1200
-height: 760
+width: 1250
+height: 1250
 unit: px
 app: Aviary Peacock (No longer available)
-image: Piggy.png
+image: digital/Piggy.png
 ---
 
-The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+This image was again created using Aviary.com's pattern generator Peacock. Here I used an extremely transparent shape, repeating it while transforming it at the same time. The colors and pattern are made of of the shape repeated thousands of times.

@@ -98,6 +98,13 @@ blockquote p {
 .mp-post-content hr,
 .mp-hr {
     border: none;
-    border-top: 1px single #8b929d;
+    border-top: 1px solid #ccc;
     margin-bottom: 1.5em;
+}
+
+.video {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
 }

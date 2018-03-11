@@ -98,7 +98,7 @@
     @include responsiveNum(font-size, 14px, 20px, 320px, 705px);
 	}
 
-.mp-post-back {
+.mp-post-back{
     position: absolute;
     top: .3em;
     left: -2em;
@@ -106,13 +106,34 @@
     a:after {
         display: none;
 	    }
-	}
+    }
+    
+.mp-gallery-link,
+.mp-lab-link {
+    margin-right: 1em;
+    &:hover:after {
+        width: 0;
+    }
+}
+
+.mp-title-block {
+    display: flex;
+    align-items: center;
+}
+
+.mp-lab-link svg {
+    fill: #fff;
+    position: relative;
+    z-index: 5;
+    top: 6px;
+}
 
 .fix-back .mp-post-back {
     position: fixed;
     top: 18px;
-    left: calc(50% - 340px);
+    left: calc(50% - 360px);
     opacity: 1;
+    text-align: center;
 	}
 
 .mp-post-arrow {

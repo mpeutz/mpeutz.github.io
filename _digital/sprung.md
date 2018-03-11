@@ -2,11 +2,11 @@
 layout: gallery
 category: aviary
 title: Spring has sprung
-width: 1200
-height: 760
+width: 800
+height: 600
 unit: px
-app: Aviary Peacock (No longer available)
-image: sprung.jpg
+app: Aviary Raven (No longer available)
+image: digital/sprung.jpg
 ---
 
-The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+This is a svg image made using Aviary.com's vector application Raven. This was the first full svg that I was able to create in this alpha version of the application.

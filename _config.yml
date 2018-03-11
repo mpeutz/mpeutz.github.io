@@ -16,6 +16,9 @@ url: http://peutzdesign.com
 img: http://peutzdesign.com/assets/images/
 exclude: ['README.md', 'assets/svg/*.svg', "node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
+sass:
+  sass_dir: _scss
+  style: compressed
 defaults:
   -
     scope:

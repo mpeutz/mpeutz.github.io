@@ -2,11 +2,11 @@
 layout: gallery
 category: aviary
 title: Dreams of Flight
-width: 1200
-height: 760
+width: 625
+height: 625
 unit: px
 app: Aviary Peacock (No longer available)
-image: dreams.png
+image: digital/dreams.png
 ---
 
-The average human male is about sixty percent water. Far as we're concerned, that's a little extravagant. So if you feel a bit dehydrated in this next test, that's normal. We're gonna hit you with some jet engines, and see if we can't get you down to twenty or thirty percent.
+This image was and experiment in seeing how you could generate a cloudy landscape with Aviary.com's pattern generator app Peacock. I added the rocket to give the abstract scene context.

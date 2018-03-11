@@ -321,7 +321,31 @@ function imageMorph(elem, $curr) {
         }, 500);
     }
 }
+    //==========================================================================
+    //
+    //      scrollToTOp
+    //
+    //==========================================================================
 
+$('body').on( 'click', '.mp-post-back', function() {
+    $('html').animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+ 
+    
+    //==========================================================================
+    //
+    //      Family example
+    //
+    //==========================================================================
+
+    $('.controls').on('click', '.deleteMe', function () {
+        $(this).siblings('.list').find('li:last').remove();
+    });
+
+    $('.controls').on('click', '.addMe', function () {
+        $(this).siblings('.list').append("<li></li>");
+    });
 
 
     //==========================================================================
@@ -353,7 +377,7 @@ function imageMorph(elem, $curr) {
             },
 
             onReady: {
-                duration: 0,
+                duration: 100,
                 render: function($container, $newContent) {
                     $container.removeClass('is-exiting');
                     $container.html($newContent);
