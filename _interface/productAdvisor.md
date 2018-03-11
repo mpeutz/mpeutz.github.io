@@ -30,4 +30,4 @@ Users adjust limiting parameters of their part search such as, voltage ranges, p
   <figcaption class="mp-post-caption">Recommendations.</figcaption>
 </figure>
 
- The product advisor’s algorithm will select the best part based on the users input. Then it will select two alternate parts focusing on maximizing pricing and performance. From this recommend list the user can quickly purchase the part, find more information, and refine the filter parameters. 
+ The product advisor’s algorithm will select the best part based on the users input. <img src="{{ site.baseurl }}/assets/images/interface/ring-selector.png" style="shape-outside: circle(50% at 50% 50%) padding-box; float: left; width: 200px;"/> Then it will select two alternate parts focusing on maximizing pricing and performance. From this recommend list the user can quickly purchase the part, find more information, and refine the filter parameters. 
