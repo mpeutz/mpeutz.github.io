@@ -45,8 +45,16 @@
 
 .mp-portfolio-link,
 .mp-gallery-link {
+    position: relative;
+    z-index: 6;
+    display: inline-block;
+
     color: $text-color;
     text-decoration: none;
+
+    &:hover {
+        opacity: 0.8;
+    }
 
     p {
         padding-top: 2em;
@@ -155,14 +163,12 @@ $fullHeight: 2 * ($cellHeight + $gap);
     height: 100%;
 }
 
-
 .mp-article-img {
     position: relative;
     background-size: 100%;
 
     transition: all 0.2s ease-out;
 }
-
 
 .mp-article-img:hover {
     background-size: 110%;

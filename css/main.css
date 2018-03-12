@@ -1412,10 +1412,22 @@ pre {
 }
 
 @supports (mix-blend-mode: soft-light) {
-  .mp-img-loader:not(.is-expanded):after {
+  .mp-post-image:not(.is-expanded):after {
     background: -o-linear-gradient(135deg, rgba(236, 101, 183, 0.5) 0%, rgba(5, 224, 216, 0.5) 100%);
     background: linear-gradient(-45deg, rgba(236, 101, 183, 0.5) 0%, rgba(5, 224, 216, 0.5) 100%);
     mix-blend-mode: hard-light;
+  }
+  .mp-traditional .mp-post-image:not(.is-expanded):after {
+    background: -o-linear-gradient(135deg, rgba(233, 30, 99, 0.5) 0%, rgba(156, 39, 176, 0.5) 100%);
+    background: linear-gradient(-45deg, rgba(233, 30, 99, 0.5) 0%, rgba(156, 39, 176, 0.5) 100%);
+  }
+  .mp-interface .mp-post-image:not(.is-expanded):after {
+    background: -o-linear-gradient(135deg, rgba(76, 175, 80, 0.5) 0%, rgba(205, 220, 57, 0.5) 100%);
+    background: linear-gradient(-45deg, rgba(76, 175, 80, 0.5) 0%, rgba(205, 220, 57, 0.5) 100%);
+  }
+  .mp-digital .mp-post-image:not(.is-expanded):after {
+    background: -o-linear-gradient(135deg, rgba(255, 235, 59, 0.5) 0%, rgba(255, 87, 34, 0.5) 100%);
+    background: linear-gradient(-45deg, rgba(255, 235, 59, 0.5) 0%, rgba(255, 87, 34, 0.5) 100%);
   }
   .mp-post-content .mp-img-loader:after {
     background: none;
@@ -2109,8 +2121,16 @@ pre {
 
 .mp-portfolio-link,
 .mp-gallery-link {
+  position: relative;
+  z-index: 6;
+  display: inline-block;
   color: #455a64;
   text-decoration: none;
+}
+
+.mp-portfolio-link:hover,
+.mp-gallery-link:hover {
+  opacity: 0.8;
 }
 
 .mp-portfolio-link p,

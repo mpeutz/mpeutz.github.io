@@ -339,11 +339,11 @@ $('body').on( 'click', '.mp-post-back', function() {
     //
     //==========================================================================
 
-    $('.controls').on('click', '.deleteMe', function () {
+    $('body').on('click', '.deleteMe', function () {
         $(this).siblings('.list').find('li:last').remove();
     });
 
-    $('.controls').on('click', '.addMe', function () {
+    $('body').on('click', '.addMe', function () {
         $(this).siblings('.list').append("<li></li>");
     });
 

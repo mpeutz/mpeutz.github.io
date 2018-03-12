@@ -42,18 +42,21 @@
 }
 
 @supports (mix-blend-mode: soft-light) {
-    .mp-img-loader:not(.is-expanded):after {
+    .mp-post-image:not(.is-expanded):after {
         background: linear-gradient(-45deg, rgba(236, 101, 183, 0.5) 0%, rgba(5, 224, 216, 0.5) 100%);
         mix-blend-mode: hard-light;
-        // .mp-traditional & {
-        //     background: linear-gradient(-45deg, #E91E63 0%, #9C27B0 100%);
-        // }
-        // .mp-interface & {
-        //     background: linear-gradient(-45deg, #4CAF50 0%, #CDDC39 100%);
-        // }
-        // .mp-digital & {
-        //     background: linear-gradient(-45deg, #FFEB3B 0%, #FF5722 100%);
-        // }
+
+        .mp-traditional & {
+            background: linear-gradient(-45deg, rgba(233, 30, 99, 0.5) 0%, rgba(156, 39, 176, 0.5) 100%);
+        }
+
+        .mp-interface & {
+            background: linear-gradient(-45deg, rgba(76, 175, 80, 0.5) 0%, rgba(205, 220, 57, 0.5) 100%);
+        }
+
+        .mp-digital & {
+            background: linear-gradient(-45deg, rgba(255, 235, 59, 0.5) 0%, rgba(255, 87, 34, 0.5) 100%);
+        }
     }
 
     .mp-post-content .mp-img-loader:after {
