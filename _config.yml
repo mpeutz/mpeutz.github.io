@@ -12,8 +12,8 @@ kramdown:
       line_numbers: true
       start_line: 1
 baseurl:
-url: http://peutzdesign.com
-img: http://peutzdesign.com/assets/images/
+url: https://peutzdesign.com
+img: https://peutzdesign.com/assets/images/
 exclude: ['README.md', 'assets/svg/*.svg', "node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
 sass:
